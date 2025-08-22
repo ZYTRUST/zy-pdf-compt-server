@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PlanPagos" pageWidth="550" pageHeight="750" columnWidth="550" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="66a2ace3-dd29-452f-ae26-480754f8c073">
+	<property name="ireport.zoom" value="1.7715610000000053"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="gastoMotivo" class="java.lang.String"/>
+	<field name="gastoCondiciones" class="java.lang.String"/>
+	<field name="gastoVariables" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="26">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==1]]></printWhenExpression>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="182" height="26" backcolor="#C0C0C0" uuid="91970162-0f39-42fc-ac60-c4e62cc5e4e5"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MOTIVO DEL GASTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="182" y="0" width="182" height="26" backcolor="#C0C0C0" uuid="57446c98-581d-4b79-8c6c-d1c8f4f44f6b"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONDICIONES DEL COBRO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="364" y="0" width="182" height="26" backcolor="#C0C0C0" uuid="6450dc43-af16-481a-b4b4-b9ff91248978"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VARIABLES]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="182" height="39" uuid="a505361e-fa0a-44e5-b84d-63ab55f3f507"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gastoMotivo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="182" y="0" width="182" height="39" uuid="c9ae2bb1-a61a-436d-a110-76d8e76e0df3"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gastoCondiciones}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="364" y="0" width="182" height="39" uuid="f230b9c8-8c6e-4a80-a36f-61edb33cee12"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gastoVariables}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

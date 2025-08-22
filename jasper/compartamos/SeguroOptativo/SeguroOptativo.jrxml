@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Plantilla" pageWidth="595" pageHeight="842" columnWidth="585" leftMargin="0" rightMargin="10" topMargin="0" bottomMargin="0" uuid="6858b344-3d5c-4c10-9274-a01177fbc8de">
+	<property name="ireport.zoom" value="1.996500000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="NotRotated" mode="Opaque" forecolor="#D8D8D8" hAlign="Center" vAlign="Middle" rotation="None" fontName="Arial Narrow" fontSize="15"/>
+	<style name="table">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="p_fecha" class="java.lang.String"/>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<parameter name="p_logo_movistar" class="java.io.InputStream"/>
+	<parameter name="p_firma_tdp" class="java.io.InputStream"/>
+	<parameter name="p_firma_testigo" class="java.io.InputStream"/>
+	<parameter name="p_firma_asegurado" class="java.io.InputStream"/>
+	<parameter name="p_firma_director" class="java.io.InputStream"/>
+	<parameter name="parameter1" class="java.util.List"/>
+	<parameter name="l_listaCliente" class="java.util.List"/>
+	<detail>
+		<band height="156">
+			<subreport isUsingCache="true">
+				<reportElement style="table_TD" mode="Opaque" x="10" y="0" width="575" height="156" uuid="80d4ad37-2e66-4cd1-a47f-4cbe07fc1fbe"/>
+				<subreportParameter name="p_firma_asegurado">
+					<subreportParameterExpression><![CDATA[$P{p_firma_asegurado}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_firma_tdp">
+					<subreportParameterExpression><![CDATA[$P{p_firma_tdp}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_fecha">
+					<subreportParameterExpression><![CDATA[$P{p_fecha}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_firma_director">
+					<subreportParameterExpression><![CDATA[$P{p_firma_director}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_logo_movistar">
+					<subreportParameterExpression><![CDATA[$P{p_logo_movistar}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_firma_testigo">
+					<subreportParameterExpression><![CDATA[$P{p_firma_testigo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_ruta">
+					<subreportParameterExpression><![CDATA[$P{p_ruta}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{l_listaCliente} ==null|| $P{l_listaCliente}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{l_listaCliente})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta}+"SeguroOptativo_suReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

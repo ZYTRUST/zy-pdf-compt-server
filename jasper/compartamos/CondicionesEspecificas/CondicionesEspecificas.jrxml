@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CondicionesEspecificas" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3d05016e-fcb8-4a3a-9b45-7fa28ee6727d">
+	<property name="ireport.zoom" value="1.610510000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="p_grupoNombre" class="java.lang.String"/>
+	<parameter name="p_codigoOperacion" class="java.math.BigDecimal"/>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\agallegos\\JaspersoftWorkspace\\MyJasperReports\\CondicionesEspecificas\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="l_listaCliente" class="java.util.List"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="156" splitType="Stretch">
+			<subreport isUsingCache="true">
+				<reportElement style="table_TD" mode="Opaque" x="0" y="0" width="555" height="156" uuid="c457a86d-a64c-49c9-bd50-a53b50de119d"/>
+				<subreportParameter name="p_grupoNombre">
+					<subreportParameterExpression><![CDATA[$P{p_grupoNombre}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_codigoOperacion">
+					<subreportParameterExpression><![CDATA[$P{p_codigoOperacion}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_ruta">
+					<subreportParameterExpression><![CDATA[$P{p_ruta}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{l_listaCliente} ==null|| $P{l_listaCliente}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{l_listaCliente})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta}+"CondicionesEspecificas_subReporte.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Plantilla" pageWidth="595" pageHeight="842" columnWidth="575" leftMargin="10" rightMargin="10" topMargin="0" bottomMargin="0" uuid="6858b344-3d5c-4c10-9274-a01177fbc8de">
+	<property name="ireport.zoom" value="1.500000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="9639"/>
+	<style name="NotRotated" mode="Opaque" forecolor="#D8D8D8" hAlign="Center" vAlign="Middle" rotation="None" fontName="Arial Narrow" fontSize="15"/>
+	<style name="table">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dataset1" uuid="a7dddc02-a96e-4adf-9113-7f368869374f"/>
+	<subDataset name="dataset2" uuid="53a61eb2-9acf-4b6d-9c1b-2d5d39989c87"/>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<parameter name="credGrupFechaVigencia" class="java.lang.String"/>
+	<parameter name="credGrupalVersion" class="java.lang.String"/>
+	<pageHeader>
+		<band height="38">
+			<image hAlign="Center" vAlign="Middle" isUsingCache="true" isLazy="true" onErrorType="Blank">
+				<reportElement x="458" y="13" width="104" height="25" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="b90b8de1-918e-45e0-a7aa-da13b285aa8f"/>
+				<imageExpression><![CDATA[$P{p_ruta}+"LogoCompartamos.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="12" width="130" height="26" forecolor="#000000" backcolor="#FFFFFF" uuid="eda8df81-d622-4603-806c-61bac29ab3bb"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Rajdhani" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pagina " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="754">
+			<staticText>
+				<reportElement x="3" y="0" width="572" height="27" uuid="cce7da92-e192-44d4-92c5-8dbb0391bb3e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONTRATO DE PRÉSTAMO - CRÉDITO SUPER MUJER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="27" width="572" height="234" uuid="63bde844-4003-4b01-80e3-fc6a062965f0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Compartamos Financiera S.A. (en adelante, “COMPARTAMOS”) y el Cliente (en adelante, “EL GRUPO”), cuyos datos de identificación se consignan al final de este documento, de forma física, o a través de medios distintos electrónicos y/o digitales que determine COMPARTAMOS, celebran un Contrato por el cual se regulan los términos y condiciones aplicables al producto denominado Crédito Súper Mujer (en adelante, “EL CRÉDITO”).
+
+Para proceder con la contratación de EL CRÉDITO, COMPARTAMOS debe verificar previamente la identidad de los miembros de EL GRUPO quienes deberán dejar constancia de la aceptación del Contrato, incluyendo la aceptación a los términos y condiciones descritos, así como de cualquier otra información que corresponda, lo cual también aplica al ingreso de nuevos integrantes. Ante el ingreso o salida de algunas de las integrantes de EL GRUPO, COMPARTAMOS actualizará la Cartilla de Identificación, la Hoja Resumen y el Cronograma.
+
+Adicionalmente, COMPARTAMOS podrá requerir a los miembros de EL GRUPO que acrediten su identidad a través de dispositivos físicos o virtuales en posesión de éstos, tales como: firma manuscrita, huella digital, clave de identificación, firma o certificado digital, medios biométricos, entre otros.
+
+Este documento es un Contrato y está conformado por: (i) el presente documento; (ii) la Hoja Resumen; (iii) la Solicitud de EL CRÉDITO (se puede registrar de forma electrónica, virtual o física); (iv) el cronograma y (v) Cartilla de Identificación y otros que se requieran. Léalo detenidamente. Al firmar este documento, EL GRUPO acepta todas y cada una de las condiciones aquí señaladas, lo cual no le restringe el derecho de resolver.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="274" width="572" height="13" uuid="5981b50d-f917-4ba4-b984-4f81b1747c09"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRIMERO: SOBRE EL CRÉDITO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="287" width="572" height="117" uuid="30a1b96e-7eff-4b5c-baac-46f6ad156624"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS otorgará a EL GRUPO, sujeto a la evaluación y calificación crediticia que realice de éste, EL CRÉDITO por el importe detallado en la Hoja Resumen que COMPARTAMOS brinde a EL GRUPO. El crédito grupal solidario es aquel que se otorga a un grupo de personas que son solidariamente responsables de las obligaciones crediticias adquiridas y en los que el sujeto de crédito es el grupo como un todo.
+
+Se entiende y precisa que, para todos los efectos del presente Contrato, tales como la cancelación de EL CRÉDITO, ejecución de pagos anticipados, aplicación de la regulación especial y/o cualquier otra consideración legal o contractual el cliente es EL GRUPO.
+
+Aprobada el crédito solicitado, los intereses, comisiones y gastos señalados en la Hoja Resumen y/o tarifario para este tipo de crédito, se devengarán a partir de la fecha de desembolso de EL CRÉDITO.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="417" width="272" height="13" uuid="c8437526-b130-47be-91eb-79dee4a4f896"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SEGUNDO: SOBRE EL GRUPO Y SU REPRESENTACIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="430" width="572" height="104" uuid="78962bcf-8cf4-4e1b-9655-ad33806ff120"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[EL GRUPO tendrá la denominación consignada en el presente Contrato y la elección de sus miembros será atribución de EL GRUPO.
+
+EL GRUPO, por mayoría de votos ha designado a quiénes conformarán el denominado “EL COMITÉ”, el cual estará integrado por la presidenta, tesorera y secretaria, quienes actuarán en representación de EL GRUPO. EL COMITÉ ostentará la representación de EL GRUPO durante la vigencia del presente crédito.
+
+En ese sentido, EL COMITÉ representará a EL GRUPO conforme a lo dispuesto por el artículo 155 del Código Civil, pudiendo efectuar las siguientes operaciones:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="534" width="546" height="117" uuid="a57b1ede-749e-405b-8301-eef9032517b8"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Suscribir los documentos contractuales de EL CRÉDITO con COMPARTAMOS, indicado en el presente documento, así como; suscribir la solicitud de refinanciamiento, reprogramación, congelamiento de EL CRÉDITO otorgado a EL GRUPO y/u otras operaciones que requieran.
+Realizar operaciones de pago de EL CRÉDITO, según el cronograma de pago correspondiente, ello no siendo restrictivo para que el resto de los integrantes puedan realizar dicha operación.
+Elección del mecanismo de desembolso de EL CRÉDITO.
+Recibir toda clase de comunicaciones emitidas por COMPARTAMOS. Dicha facultad no enerva la responsabilidad de COMPARTAMOS sobre el deber de informar los cambios contractuales u otros aspectos a EL GRUPO, de acuerdo con la normativa aplicable.
+Otras facultades que se le otorguen.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="-90" width="572" height="13" uuid="779b4d13-03ee-4556-abd6-f2763e573b97"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TERCERO: SOBRE LA SOLIDARIDAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="664" width="572" height="13" uuid="8838990a-dd12-4c1c-9f78-23b654f2c3af"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TERCERO: SOBRE LA SOLIDARIDAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="677" width="572" height="65" uuid="ce1125ef-8ecf-40da-b298-d8befb97489f"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Conforme a lo descrito en la cláusula Primera, los miembros de EL GRUPO reconocen que se constituyen en deudores solidarios entre sí, con lo cual aceptan que la presente deuda es solidaria entre sí, comprometiéndose a pagar todas las obligaciones asumidas por EL GRUPO a favor de COMPARTAMOS, incluyendo los intereses compensatorios, intereses moratorios o concepto permitido por la normativa aplicable que, cumplan con el criterio señalado en la cláusula quinta siguiente, comisiones y gastos de toda clase que se deriven de este Contrato, sin reserva ni limitación alguna.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="534" width="26" height="39" uuid="3c72d530-f948-453c-83aa-db4930bbb5f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="573" width="26" height="26" uuid="1de9a8e1-b256-47d9-814b-a309b5e944c2"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="612" width="26" height="26" uuid="c604618b-eda4-4a26-a64b-1e93cda37bca"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="599" width="26" height="13" uuid="0e89eb85-0c93-4d13-881f-96c35b80a561"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="638" width="26" height="13" uuid="a609a8db-9d8f-4e26-84e8-614ebb42e2e4"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+		</band>
+		<band height="754">
+			<staticText>
+				<reportElement x="3" y="53" width="572" height="13" uuid="0406c93f-c1a3-4572-b46c-040067e054fb"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CUARTO: SOBRE EL MECANISMO DE DESEMBOLSO DEL CRÉDITO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="157" width="572" height="13" uuid="8e6882b6-81a6-419b-8679-54df0bbfc743"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QUINTO: SOBRE EL PAGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="170" width="572" height="312" uuid="11a1db78-4315-4470-bd9b-5c7e7c94d7a7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[EL GRUPO pagará el importe de EL CRÉDITO otorgado, más los intereses compensatorios y moratorios, comisiones y gastos (en adelante, el “Saldo Deudor”), en la moneda, periodicidad, oportunidad de pago y plazo que se detallan en el Contrato y en la Hoja Resumen, los cuales serán determinados sobre la base de la legislación vigente y aplicable o cualquier pronunciamiento de autoridad competente que habilite su cobro a EL GRUPO. El Saldo Deudor podrá comprender los intereses compensatorios, intereses moratorios o concepto permitido por la normativa aplicable. COMPARTAMOS podrá conceder a EL GRUPO períodos de gracia para el pago de EL CRÉDITO y/o diferir el pago de las cuotas próximas a vencer, en casos excepcionales, a solicitud de EL GRUPO o cuando represente un beneficio para éste. Los intereses que se generen durante dichos períodos de gracia serán capitalizados. EL GRUPO se encuentra facultado para cumplir con sus pagos programados a través de los mecanismos de pago otorgados por COMPARTAMOS o de cualquier otro canal que COMPARTAMOS ponga a su disposición. Cabe precisar que, la cuota indicada en el cronograma de pago corresponde a la cuota total de EL GRUPO.
+
+Los pagos que realice EL GRUPO en virtud del Contrato se aplicarán en el orden siguiente: a) intereses compensatorios; b) interés moratorio que cumpla con el criterio indicado en el párrafo precedente, en caso corresponda; c) gastos - comisiones y d) capital.
+
+El importe adeudado por EL GRUPO como consecuencia del otorgamiento de EL CRÉDITO devengará diariamente el interés compensatorio a la tasa efectiva detallada en la Hoja Resumen. Adicionalmente, en caso existan una o más cuotas del Saldo Deudor que se encuentren parcial o totalmente vencidas, COMPARTAMOS podrá: (i) aplicar sobre el importe no cancelado oportunamente el interés moratorio, compensatorio fijado en la Hoja Resumen; o concepto permitido por la normativa aplicable, de acuerdo con lo señalado en la Hoja Resumen, y que cumpla con lo señalado en el primer párrafo de esta cláusula. EL GRUPO incurrirá en mora o incumplimiento en forma automática, sin necesidad de requerimiento por parte de COMPARTAMOS.
+COMPARTAMOS se encuentra prohibida de realizar cualquier acción que sea contraria al marco legal vigente aplicable a las operaciones de crédito; lo que involucra, sin que resulte limitativa la descripción, la capitalización de los intereses moratorios que se generen, otra comisión o gasto en caso de incumplimiento o atraso en el pago de EL CRÉDITO por parte de EL GRUPO; sin embargo, en caso de modificación a las prohibiciones legales antes señaladas, COMPARTAMOS podrá efectuar el cobro de interés moratorio o del concepto aplicable en caso de incumplimiento según lo permita la normativa vigente.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="66" width="572" height="78" uuid="38d58786-ba0a-4de8-9e4b-b4b679c5bab2"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS pondrá a disposición de EL GRUPO los siguientes mecanismos de desembolso de EL CRÉDITO a elección de las integrantes de EL GRUPO: i) órdenes de pago, ii) en efectivo, iii) cheque girado a la orden de cada integrante de EL GRUPO, iii) abono en cuenta en COMPARTAMOS, iv) dinero electrónico de contar con una Billetera Electrónica; y, v) mediante otros mecanismos que COMPARTAMOS ponga a disposición.
+En caso EL GRUPO decida utilizar el mecanismo de desembolso mediante orden de pago, podrá desembolsar EL CRÉDITO en los agentes corresponsales que COMPARTAMOS le informe, dentro del plazo señalado en dicha orden, caso contrario, el préstamo quedará sin efecto.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="1" width="572" height="39" uuid="f6eaa320-c6c7-4804-b83a-b725de5cb459"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS trasladará el cobro de gastos y comisiones a EL GRUPO, según lo señalado en el Art. 16 del Reglamento de Gestión de Conducta de Mercado del Sistema Financiero (RGCM). Siendo en tal sentido, que el cobro de comisiones y/o gastos procede conforme a lo dispuesto en el precitado marco normativo.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="495" width="572" height="13" uuid="7701b276-4bde-4c01-95f0-34e416fbb25c"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SEXTO: SOBRE EL ADELANTO DE CUOTAS O PAGO ANTICIPADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="508" width="572" height="208" uuid="dbaa2bcc-e52f-46cb-841a-02f6d45dcb12"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[6.1. EL GRUPO puede efectuar el pago parcial del crédito en cualquier momento en las agencias y oficinas o a través de los canales que COMPARTAMOS ponga a su disposición, los cuales serán informados oportunamente en la página web www.compartamos.com.pe. Los pagos mayores a la cuota exigible del periodo, pero menores al pago total de la obligación podrán calificarse como pagos anticipados parciales o pagos adelantados.
+6.2. Los pagos anticipados traen como consecuencia la aplicación del monto pagado al capital del crédito, con la consiguiente reducción de los intereses, las comisiones y los gastos derivados del presente contrato al día del pago. En caso de pagos anticipados parciales, (mayores a dos cuotas, incluida la exigible en el periodo) los intereses, comisiones y gastos derivados del contrato se reducirán a la fecha de pago. EL GRUPO deberá optar entre reducir el monto o número de las cuotas del crédito y deberá dejar constancia de su elección en el formato que COMPARTAMOS ponga a su disposición. Cuando el pago anticipado se efectúe a través de tercero, EL GRUPO deberá comunicar a través de instrucción efectuada por escrito su voluntad de reducir monto de cuota o reducir el plazo del crédito de acuerdo con lo establecido en el numeral 29.3 del Reglamento de Gestión de Conducta de Mercado del Sistema Financiero (“Reglamento”), aprobado por la Superintendencia de Banca, Seguros y AFP (“SBS”) mediante Resolución N° 3274-2017 o las normas que las modifiquen o sustituyan de Transparencia. En caso no se cuente con la instrucción de la elección de EL GRUPO, y dentro de los quince (15) días calendario de realizado el pago, COMPARTAMOS procederá a reducir el número de cuotas del crédito.
+6.3 EL GRUPO podrá solicitar el cronograma de pagos modificado y COMPARTAMOS deberá remitirlo en un plazo no mayor a siete (07) días calendario contados desde la solicitud.]]></text>
+			</staticText>
+		</band>
+		<band height="754">
+			<staticText>
+				<reportElement x="3" y="79" width="572" height="13" uuid="d17e2e35-7928-4939-9097-a7a043e611c2"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SÉPTIMO: CESIÓN DE POSICIÓN CONTRACTUAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="144" width="572" height="13" uuid="8dc20d9f-6e73-408d-bd5b-74776d666daa"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OCTAVO: RESOLUCIÓN DEL CONTRATO POR EL GRUPO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="92" width="572" height="39" uuid="50e3e463-7498-4e74-adb4-364a01ed64ee"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS podrá ceder sus derechos y/o su posición contractual en este Contrato a cualquier tercero, prestando los miembros de EL GRUPO de conformidad con lo indicado en el Código Civil, en este acto, su consentimiento anticipado a la referida cesión, lo cual será informado mediante los mecanismos previstos en la cláusula Décimo Quinta.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="157" width="572" height="39" uuid="3186aca4-4758-4516-85eb-e84deaf9e2a5"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[EL GRUPO podrá poner término a este Contrato cuando así lo decida, dando aviso a COMPARTAMOS, sin perjuicio de su obligación de pagar de manera inmediata el Saldo Deudor total de EL CRÉDITO que liquide COMPARTAMOS. COMPARTAMOS podrá mantener vigente EL CRÉDITO hasta la cancelación total del Saldo Deudor.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="14" width="572" height="52" uuid="b329ecc8-b4e3-40f6-a400-f1e424830ce6"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[6.4 EL GRUPO podrá efectuar pagos adelantados los cuales se aplicarán a la cuota exigible completa y lo restante como pago a cuenta de las cuotas próximas a vencer, sin que se produzca reducción de intereses, comisiones y gastos; para lo cual deberá dejar constancia en el formato que COMPARTAMOS ponga a su disposición.
+6.5 Los pagos que realice EL GRUPO por montos menores o iguales a dos cuotas, incluida la exigible en el periodo, se consideran adelanto de cuotas.
+6.6 Sin perjuicio de lo señalado anteriormente, EL GRUPO podrá decidir aplicar su pago por encima de la cuota exigible en el periodo, ya sea como pago parcial anticipado o como pago adelantado.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="222" width="572" height="364" uuid="d3be8d33-a9ea-4234-b656-d3e02106ec50"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[El plazo del Contrato es a plazo fijo; sin embargo, COMPARTAMOS podrá dar por vencidos todos los plazos y/o resolver de pleno derecho el Contrato desde la fecha que señale en la comunicación que se realice a EL GRUPO previamente, sin necesidad de declaración judicial, en los siguientes casos: a) Si EL GRUPO: (i) no paga en la forma, plazo y oportunidad convenidas el importe que figura en este Contrato y/o en el cronograma de pagos respectivo; (ii) no cumple cualquier otra obligación frente a COMPARTAMOS como deudor; b) Se presentase cualquier otra situación mediante la cual se suspenden sus pagos; c) Si cualquier obligación crediticia de EL GRUPO para con COMPARTAMOS u otra empresa del Sistema Financiero es clasificada en la categoría de Dudosa o Pérdida o si la situación crediticia de EL GRUPO, bajo las políticas internas de la empresa, es considerada inconsistente y/o deficiente, en caso dicha nueva situación crediticia afecte el cumplimiento de las obligaciones de EL GRUPO respecto del presente Contrato; d) Si mantener vigente EL CRÉDITO implica el incumplimiento de las políticas corporativas de COMPARTAMOS o de alguna disposición legal, en especial aquellas referidas a políticas crediticias o de lavado de activos y financiamiento del terrorismo; o e) Por cese o fallecimiento de miembros de EL GRUPO; f) Si EL GRUPO no cuenta con un seguro de desgravamen vigente en los términos previstos en el presente documento; g) Si EL GRUPO incumple cualquiera de las obligaciones que asumen en el presente Contrato y/o atenta contra las políticas internas que tiene COMPARTAMOS en cada uno de sus canales o plataformas; h) Si COMPARTAMOS considera que no resulta conveniente mantener relaciones comerciales con EL GRUPO por tener una conducta intolerable, deshonesta, agresiva u ofensiva por parte de EL GRUPO con el personal de COMPARTAMOS u otros Clientes de COMPARTAMOS, realizada en las oficinas de COMPARTAMOS o a través de los canales que COMPARTAMOS ponga a su disposición; i) Mantiene saldos menores en beneficio de COMPARTAMOS y éste sobre la base de sus políticas internas decide condonar dichos montos.
+
+Para los supuestos enunciados, COMPARTAMOS, dependiendo de la causal, podrá bloquear temporalmente la cuenta donde se soporta el crédito comunicando a través de los medios de comunicación establecidos en el presente Contrato, sin necesidad de aviso previo, hasta que EL GRUPO regularice la situación que originó el bloqueo y, en caso ello no ocurra, podrá comunicar la resolución del Contrato a través de los medios de información directos establecidos en el presente documento. COMPARTAMOS comunicará a través de los medios directos previamente a la resolución. En este caso, EL GRUPO deberá pagar de manera inmediata la totalidad de la deuda.
+
+De la misma manera, COMPARTAMOS, en aplicación de la normativa prudencial, podrá terminar de manera anticipada este Contrato cuando así lo decida, señalando en la comunicación correspondiente, el motivo de la misma. Dicho aviso se cursará en el plazo de siete (7) siete días posteriores a la aplicación de dicha resolución. En cualquier caso, de resolución o terminación anticipada del Contrato, EL GRUPO, bajo su responsabilidad, se obliga a cancelar dentro de las veinticuatro (24) horas siguientes o dentro del plazo adicional que le otorgue COMPARTAMOS expresamente y por escrito, el íntegro del Saldo Deudor pendiente de pago según la liquidación que realice COMPARTAMOS.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="209" width="572" height="13" uuid="81e34273-bfc4-490f-8cd0-6114d4de168f"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOVENO: RESOLUCIÓN DEL CONTRATO POR COMPARTAMOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="599" width="572" height="13" uuid="46fd5e96-9d82-49a0-aef7-2e95f8bcfff8"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DÉCIMO: DE LOS SUPUESTOS DE RETIRO DE INTEGRANTES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="612" width="572" height="117" uuid="6a220edd-4c50-4776-aeb4-b093919ce541"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[De conformidad con la Resolución S.B.S. N° 4174-2015, Reglamento de Créditos Grupales Solidarios y sus modificatorias, EL GRUPO cuenta con la capacidad de autogestión, en virtud del cual puede; determinar la conformación del mismo, pudiendo acordarse el retiro de alguna(s) de la(s) de la(s) integrante(s), por incumplimiento de las condiciones contractuales señaladas en el presente Contrato, para lo cual EL GRUPO, a través de EL COMITÉ, formulará la solicitud del retiro de la(s) integrante(s) a través del procedimiento que COMPARTAMOS establezca, tal operación no afectará la calidad de deudor de EL GRUPO. Para la formulación de la solicitud de retiro de la(s) integrante(s) deben intervenir, como mínimo, dos (2) de tres (3) miembros de EL COMITÉ, de manera conjunta.
+
+Dicha solicitud se encontrará sujeta a la aprobación de COMPARTAMOS, dentro del plazo establecido para ello, el mismo que se encontrará publicado en la página web de la empresa.]]></text>
+			</staticText>
+		</band>
+		<band height="754">
+			<staticText>
+				<reportElement x="3" y="118" width="572" height="13" uuid="0b63c07f-08ba-4c98-b575-1f64449a9161"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DÉCIMO PRIMERO: DEL FALLECIMIENTO O INVALIDEZ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="131" width="572" height="26" uuid="70426763-74eb-47fd-8059-047fac2eb28a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[En caso de fallecimiento o invalidez de sus miembros, EL GRUPO deberá comunicar de ello a COMPARTAMOS; debiendo tener en cuenta el procedimiento aplicable para dichos casos, que se encuentra más a detalle en la página web de COMPARTAMOS, www.compartamos.com.pe. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="170" width="572" height="13" uuid="842a6e26-0520-4c11-ae56-d8eee70b0da8"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DÉCIMO SEGUNDO: DE LA INCAPACIDAD PARA FIRMAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="183" width="572" height="65" uuid="6281e772-b179-47e8-8c19-1791ae5bad27"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[En caso algún integrante de EL GRUPO sea iletrado y/o tenga incapacidad para firrmar y el monto otorgado de manera individual al interior de EL GRUPO es menor a S/ 3,000.00 (Tres Mil con 00/100 Soles), sólo deberá imprimir su huella digital en el presente Contrato y demás documentos. En caso el monto sea mayor o igual a S/ 3,000.00 (Tres Mil con 00/100 Soles), deberá imprimir su huella digital en el presente Contrato y demás documentos, con la firma de un testigo a ruego. En ningún caso los colaboradores de COMPARTAMOS firmarán a ruego y/o encargo. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="14" width="572" height="91" uuid="4344de8e-3ec5-4c76-9124-ae5bda8a36ee"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[La(s) integrante(s) que sean retiradas de EL GRUPO mantendrán, por la parte que proporcionalmente corresponda respecto del Saldo Deudor de EL GRUPO, el crédito individual que corresponda frente a COMPARTAMOS. En virtud de ello, COMPARTAMOS entregará a la(s) integrante(s) que sean retiradas de EL GRUPO, los documentos contractuales que correspondan. De la misma forma, COMPARTAMOS entregará a EL GRUPO, a través del COMITÉ, el cronograma de pagos actualizado, Hoja Resumen y Cartilla de Identificación.
+
+Debido a la naturaleza del crédito grupal, el número máximo de integrantes de EL GRUPO que podrán ser retiradas será definido por COMPARTAMOS, lo cual será oportunamente informado a EL GRUPO, observando la normativa vigente aplicable.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="268" width="572" height="485" uuid="b511a1d3-daa2-4897-a1db-4fe2f32d2991"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS se reserva el derecho de modificar en cualquier momento las comisiones, gastos y/u otras condiciones contractuales  cuando, a criterio de COMPARTAMOS, se presente alguno de los siguientes supuestos: (i) modifique el régimen tributario, legal y político vigente de forma tal que ello implique un "efecto materialmente adverso" o costo adicional a COMPARTAMOS en relación con las operaciones comerciales", (ii) modificaciones en la legislación vigente que cambien las condiciones actuales del mercado financiero, del mercado de capitales, política monetaria y/o del país y que por ello se cambien las condiciones económicas, financieras, bancarias de manera interna y/o externa; (iii) variación en la calidad crediticia de EL GRUPO; (iv) funcionamiento o tendencia del mercado; y/o (v) encarecimiento de los servicios prestados por terceros, cuyos costos son trasladados a EL GRUPO, o de los costos de prestación de los productos y servicios ofrecidos por COMPARTAMOS.
+
+Se aplicará la modificación a la(s) tasa(s) de interés pactada(s)  en los siguientes supuestos establecidos en el Reglamento de Gestión de Conducta de Mercado del Sistema Financiero, aprobado por Resolución SBS N° 3274-2017 y sus normas modificatorias (en adelante, el “Reglamento de Conducta de Mercado”): (i) la novación de la obligación considerando para tal efecto lo dispuesto en el Código Civil;  (ii) en caso exista negociación efectiva entre COMPARTAMOS y EL GRUPO al momento de contratar y en cada oportunidad en que ambas partes, de común acuerdo, lo estimen conveniente; (iii) cuando lo autorice la SBS conforme al marco normativo aplicable; y/o, (iv) cuando implique condiciones más favorables para EL GRUPO; en cualquiera de estos supuestos, la modificación surtirá efecto de forma inmediata y será comunicada posteriormente a través de los medios directos establecidos en el presente documento, salvo que la SBS en el caso específico del numeral (iii) determine un procedimiento distinto al antes señalado; el cual deberá ser ejecutado en cumplimiento de la legislación vigente y aplicable. COMPARTAMOS tiene la posibilidad de efectuar cambios si el marco normativo y/o legal lo permite, en cuyo caso COMPARTAMOS podrá aplicar los cambios de manera inmediata sin perjuicio de la difusión del cambio, ello de conformidad con el Art. 51 del Reglamento de Conducta de Mercado, sujeto a una comunicación posterior a través de los medios directos establecidos en el presente Contrato.
+
+Además de lo señalado anteriormente, COMPARTAMOS podrá incorporar nuevas comisiones y/o gastos, cuando lo considere conveniente, en el marco de la normativa vigente apliable. En cualquiera de los supuestos enunciados en la presente cláusula (con excepción de lo previsto en los párrafos segundo y cuarto), COMPARTAMOS comunicará a EL GRUPO, a través de medios de comunicación directos establecidos en la cláusula Décimo Quinta del presente Contrato, las modificaciones efectuadas, con una anticipación no menor a cuarenta y cinco (45) días calendario a la fecha de entrada en vigencia de las mismas y/o a la fecha en la que regirán las nuevas condiciones del Contrato. En cualquier caso, la comunicación indicará el momento a partir del cual las modificaciones entrarán en vigencia. Dentro de dicho plazo, y en caso EL GRUPO no esté de acuerdo con las modificaciones, podrá optar por resolver el Contrato a través de los canales que COMPARTAMOS ponga a su disposición (los cuales serán como mínimo los mismos canales provistos para la contratación de EL CRÉDITO), en cuyo caso tendrá un plazo de cuarenta y cinco (45) días calendario, contados a partir de la fecha en que comunicó a COMPARTAMOS tal intención, para pagar la totalidad del Saldo Deudor, en forma previa a la resolución del Contrato. De no ejercer este derecho dentro del plazo establecido anteriormente, se entenderá que EL GRUPO acepta las modificaciones en su totalidad. Para estos efectos, EL GRUPO acepta expresamente que su silencio constituye manifestación de voluntad y aceptación a las modificaciones efectuadas por COMPARTAMOS, conforme a lo previsto en la presente cláusula. La negativa de EL GRUPO a la incorporación de servicios no relacionados directamente a EL CRÉDITO, no implica la resolución del Contrato. Las modificaciones que resulten favorables a EL GRUPO serán aplicadas de forma inmediata y serán informadas posteriormente dentro del plazo razonable que estime COMPARTAMOS y a través de los medios directos establecidos en el presente documento.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="255" width="572" height="13" uuid="cba464c3-d7c6-4354-8fdc-951f2ce4b99e"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DÉCIMO TERCERO: MODIFICACIÓN CONTRACTUAL]]></text>
+			</staticText>
+		</band>
+		<band height="754">
+			<staticText>
+				<reportElement x="3" y="14" width="572" height="52" uuid="a49fe489-4d9f-4a9a-b808-e0c9f1c41cdc"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Asimismo, COMPARTAMOS, de forma unilateral o a través de un acuerdo con el GRUPO, podrá efectuar modificaciones contractuales de EL CRÉDITO, así como reprogramaciones y/u otros análogos, en el marco de una declaratoria de estado de emergencia, conforme a los procedimientos que para tales efectos establezca la Superintendencia de Banca, Seguros y AFP (SBS); sin que ello implique el cobro adicional de intereses, comisiones, gastos administrativos u otros análogos.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="299" width="572" height="13" uuid="b05f9768-72c0-4467-aae2-ac0e7ceaa7ea"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ DÉCIMO QUINTO: DE LA COMUNICACIÓN DE LAS MODIFICACIONES ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="312" width="572" height="169" uuid="9d1efb3f-dfa6-459d-9454-426e3965dd22"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Las modificaciones - indicadas en el Contrato y/o Hoja Resumen- serán informadas a EL GRUPO por los medios que COMPARTAMOS pone a disposición de EL GRUPO a través de los canales de comunicación, entre ellos, los medios de comunicación directos como: (i) informe de pagos mensuales; (ii) comunicaciones al domicilio señalado en la Solicitud, correo electrónico y/o domicilio vigente y actualizado de EL GRUPO; (iii) llamadas telefónicas; (iv) notas de cargo - abono, en tanto COMPARTAMOS le envíe o entregue esta comunicación; (v) vouchers de operaciones, en tanto se envíe o entregue esta comunicación a EL GRUPO, se le comunique en forma clara la información que COMPARTAMOS le quiere hacer llegar o los cambios en su(s) Contrato(s), se observen los derechos que EL GRUPO tiene y se respete el plazo de comunicación anticipada, (vi) mensajes de texto (SMS); (vii) red de mensajería virtual u aplicación de software que cumpla con dicho fin, aplicación (APP) descargada en teléfono inteligente (Smartphone) u otro dispositivo inteligente de similares características, computadora o tablet u cualquier otra APP y/o tecnología similar a la APP; y (viii) uso de chatbot o herramientas digitales de similar interacción soportadas en aplicaciones de software (APP). Sin perjuicio de los medios directos enunciados en el párrafo precedente, COMPARTAMOS podrá utilizar medios indirectos con el fin de informar y/o brindar servicios de comunicación complementarios a EL GRUPO, tales como: (i) publicaciones en las oficinas de COMPARTAMOS; (ii) página Web de COMPARTAMOS; (iii) cajeros automáticos; (iv) mensajes en redes sociales; y/o, (v) avisos en cualquier diario, periódico o revista de circulación nacional, a elección de COMPARTAMOS.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="79" width="572" height="13" uuid="1b095319-6c71-4fa2-acde-f32a3650fcf9"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DÉCIMO CUARTO: NORMAS PRUDENCIALES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="92" width="572" height="195" uuid="fdc43bc3-705d-416e-99dc-92635e4684c0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[De acuerdo con la Ley N° 26702 y con las disposiciones emitidas por la SBS (Disposiciones Prudenciales) COMPARTAMOS puede: 1. Reducir el importe de EL CRÉDITO en cualquier momento si el comportamiento crediticio y/o el deterioro de su calidad crediticia y/o sus niveles elevados de endeudamiento en el sistema financiero (sobreendeudamiento) de EL GRUPO así lo ameritan sin necesidad de enviar aviso previo alguno, así como cuando en aplicación de normas prudenciales emitidas por la SBS sobre la administración de riesgo de sobreendeudamiento de deudores minoristas, COMPARTAMOS identifique que el nivel de endeudamiento de EL GRUPO o su comportamiento de pago en el sistema financiero puedan generar un potencial deterioro de su calidad crediticia. 2. COMPARTAMOS podrá resolver o modificar el Contrato – en aspectos distintos a las tasas de interés, que cumplan con el criterio señalado en el primer párrafo de la cláusula quinta, comisiones o gastos - como consecuencia de la detección de actividades que atentan contra el sistema de prevención del lavado de activos antes o durante la vigencia del Contrato.  3. COMPARTAMOS podrá resolver o modificar el Contrato cuando EL GRUPO haya presentado  información o documentación inexacta, incompleta, falsa o inconsistente- antes o durante- la vigencia del presente Contrato. Para los supuestos enunciados en los numerales 1, 2 y 3, COMPARTAMOS comunicará su decisión dentro de los siete (7) días posteriores a la fecha en que hace efectiva la misma. Asimismo, en aplicación de las Disposiciones Prudenciales, COMPARTAMOS puede decidir no contratar con EL GRUPO.
+En caso la modificación del Contrato, sea unilateral, proveniente de la implementación de normas prudenciales, surtirá efecto de forma inmediata; y sus alcances serán comunicados en los términos señalados en este Contrato en el plazo de siete (7) días posteriores a dicha modificación.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="508" width="572" height="52" uuid="b3ba6011-29a9-428b-a4b2-99c05e806eda"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Las partes acuerdan que en tanto no se comunique por escrito el cambio de domicilio de cualquiera de estas, las diversas diligencias, actuaciones, notificaciones, requerimientos o comunicaciones, surtirá efectos legales en el domicilio señado en la CARTILLA DE IDENTIFICACIÓN, cuya dirección declarada en dicho documento será la acordada por EL GRUPO. En caso se realice el cambio de domicilio, esta entrará en vigencia a los quince (15) días de recibido el comunicado de variación de cualquiera de las partes.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="495" width="572" height="13" uuid="acde34e2-8905-4f82-8e6a-5a69bc735b53"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DÉCIMO SEXTO: DEL CAMBIO DE DOMICILIO ]]></text>
+			</staticText>
+		</band>
+		<band height="754">
+			<staticText>
+				<reportElement x="3" y="27" width="572" height="169" uuid="ea38b059-ac53-4fe4-aa4a-6390b854d324"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Las partes acuerdan que en caso surjan controversias sobre asuntos materia del presente Contrato, incluidas las referidas a rescisión, conclusión, ineficacia, nulidad, invalidez y/o resolución por incumplimiento del mismo, a elección de cualquiera de las partes, podrá optar por accionar y someterse ante:(i) El Poder Judicial de la ciudad donde firrmen el Contrato; o,(ii) Sede Arbitral, siendo que EL GRUPO podrá elegir dicha modalidad de resolución de controversias, siendo obligatorio para COMPARTAMOS aceptar someterse a dicha vía cuando sea elegida por EL GRUPO. Por su parte, en los casos que COMPARTAMOS solicite la utilización de la vía arbitral, no será obligatorio para EL GRUPO someterse a dicha vía.
+COMPARTAMOS pone a disposición de EL GRUPO la atención de reclamos mediante los siguientes canales:
+    • De manera presencial a través de cualquiera de nuestras agencias a nivel nacional
+    • A través de nuestra página web www.compartamos.com.pe
+    • Llamando a la central telefonica al 01-313-5000
+Cualquiera de las integrantes de EL GRUPO podrá presentar el reclamo, para lo cual deberán presentar la información indicada en la página web www.compartamos.com.pe o cualquiera de los canales antes indicados. COMPARTAMOS brindará la respuesta  al cliente y/o usuario, de acuerdo a lo dispuesto en la normativa vigente en materia de atención de reclamos.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="14" width="572" height="13" uuid="cc08ccb4-a4b0-47d2-8f46-b268d00504e9"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DÉCIMO SÉPTIMO: DE LA SOLUCIÓN DE CONTROVERSIAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="273" width="572" height="13" uuid="0946dd57-3c9b-4b2d-9004-0767331c4df2"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DÉCIMO NOVENA: MONTO DE EL CRÉDITO ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="286" width="572" height="130" uuid="0af0f119-115a-4509-9b47-adc2e8f6071e"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[EL COMITÉ podrá solicitar la incorporación de nuevos integrantes en EL GRUPO y la ampliación del monto de EL CRÉDITO durante la vigencia del Contrato, suscribiendo para tal efecto la “Solicitud de Crédito”, la cual estará sujeta a la aprobación de COMPARTAMOS. La inclusión de nuevas integrantes a EL GRUPO generará la actualización de la Hoja de Resumen en relación con el nuevo monto del crédito y sus características, así como la actualización de la lista de las nuevas integrantes de EL GRUPO en la CARTILLA DE IDENTIFICACIÓN. En caso de que la actualización (modificación) en relación con el nuevo monto del crédito y sus características implique cambios en las condiciones pactadas, estas se comunicarán de acuerdo a lo señalado en la cláusula Décima Tercera. El GRUPO conoce y acepta que asume solidariamente las obligaciones contraídas en el presente Contrato incluyendo a las nuevas integrantes, con la debida suscripción por EL COMITÉ de la nueva Hoja Resumen. De igual forma, las nuevas integrantes, declaran conocer que, a la firma del presente Contrato, asumirán de manera solidaria las obligaciones previamente contraídas por EL GRUPO, y en general todas las obligaciones detallas en la Hoja Resumen, conforme se indica en la cláusula introductoria. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="429" width="572" height="13" uuid="2e19535d-1500-421a-aa5e-435ee9157ad5"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIGÉSIMA: FORMAS DE CONTRATACIÓN ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="442" width="572" height="104" uuid="f108efb0-e29d-4722-ac05-66231fd6a51b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS podrá contar con mecanismos de contratación distintos al escrito, tales como comunicaciones telefónicas, medios electrónicos u otros mecanismos, bastando para ello su aceptación a través de un clic, clave secreta, clave dinámica, cliquear en dispositivos, aceptación por voz, datos biométricos (huella dactilar, identicación facial, etc.), códigos, autogeneración de códigos, página web, correo electrónico y/o cualquier otro medio de autenticación que complemente y/o reemplace dichas claves y otros mecanismos que impliquen la manifestación de voluntad o aceptación de EL GRUPO a través de canales o medios electrónicos o virtuales que COMPARTAMOS ponga a su disposición. Sin perjuicio de los mecanismos de contratación distintos al escrito que utilice COMPARTAMOS, según el presente Contrato, EL GRUPO declara que todas las comunicaciones que se realicen con colaboradores de COMPARTAMOS, a través de medios electrónicos, constituyen un medio de manifestación de voluntad suficiente. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="209" width="572" height="13" uuid="e2c2bc73-b0f5-4b5b-832b-7dff16368761"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DÉCIMO OCTAVO: DE LA HOJA RESUMEN ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="222" width="572" height="39" uuid="954393d6-24c2-4eaa-937c-2e8020826df4"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[La Hoja Resumen señala las condiciones de EL CRÉDITO desembolsado a EL GRUPO, como son: monto, plazo, cronograma de pagos, tasa de interés compensatorio, tasa de interés moratorio o concepto permitido por la norma aplicable que cumpla con lo señalado en la cláusula quinta. Dicho documento es parte integrante del presente Contrato. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="573" width="572" height="181" uuid="0057e074-b701-4caf-8bc1-a674f888b423"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS podrá contar con mecanismos de contratación distintos al escrito, tales como comunicaciones telefónicas, medios electrónicos u otros mecanismos, bastando para ello su aceptación a través de un clic, clave secreta, clave dinámica, cliquear en dispositivos, aceptación por voz, datos biométricos (huella dactilar, identicación facial, etc.), códigos, autogeneración de códigos, página web, correo electrónico y/o cualquier otro medio de autenticación que complemente y/o reemplace dichas claves y otros mecanismos que impliquen la manifestación de voluntad o aceptación de EL GRUPO a través de canales o medios electrónicos o virtuales que COMPARTAMOS ponga a su disposición. Sin perjuicio de los mecanismos de contratación distintos al escrito que utilice COMPARTAMOS, según el presente Contrato, EL GRUPO declara que todas las comunicaciones que se realicen con colaboradores de COMPARTAMOS, a través de medios electrónicos, constituyen un medio de manifestación de voluntad suficiente.
+
+Asimismo, con la finalidad de contratar el presente producto, COMPARTAMOS podrá poner a disposición de EL GRUPO a otros mecanismos, plataformas, redes de mensajería u aplicación software que cumpla con dicho fin, aplicación (APP) descargada en teléfono inteligente (Smartphone) u otro dispositivo inteligente de similares características, computadora o Tablet o cualquier otra APP y/o tecnología similar a la APP y demás medios electrónicos, propias o de terceros que ofrezca COMPARTAMOS, los mismos que deberán permitir dejar constancia de la aceptación del contrato.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="560" width="572" height="13" uuid="da811a84-6440-458b-96dc-30d9613ce441"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIGÉSIMA: FORMAS DE CONTRATACIÓN ]]></text>
+			</staticText>
+		</band>
+		<band height="754">
+			<staticText>
+				<reportElement x="3" y="79" width="572" height="13" uuid="ecc4fb73-9f9a-4d3c-b7b4-023c66056721"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIGÉSIMA PRIMERA: GARANTÍA MOBILIARIA SOBRE CUENTA DE AHORRO ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="92" width="572" height="234" uuid="21b2132a-d1e6-4f44-882d-cda74f1d0e19"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[EL GRUPO podrá presentar una garantía mobiliaria sobre la cuenta de ahorro de un Tercero, que se constituye(n) como Fiador(es), para el  cumplimiento de las obligaciones  asumidas en forma directa, indirecta, existentes, futuras o eventuales y solidaria asumidas por EL GRUPO en el presente Contrato. Dicho Fiador(es) podrá(ían) constituir o presentar una GARANTÍA MOBILIARIA sobre los fondos depositados en una cuenta de ahorros , en adelante LA(S) CUENTA(S), y extendiéndose a los intereses que se genere en ellas, a favor de COMPARTAMOS, con el objeto de garantizar el pago de las obligaciones asumidas por el GRUPO frente a COMPARTAMOS.
+
+LA GARANTÍA MOBILIARIA se extinguirá mediante la cancelación de todos los montos adeudados a satisfacción de COMPARTAMOS. EL GRUPO declara conocer que la presente GARANTÍA MOBILIARIA respalda el pago de EL CRÉDITO en las fechas establecidas en el Cronograma de Pagos, la cual está compuesta por capital, intereses, que sean legalmente exigibles, comisiones, gastos y cualquier otro concepto acordado por las partes establecidos en la Hoja Resumen.
+
+El Fiador(es)  solidario(s), se obliga(n) a no retirar, transferir y en general a no disponer los fondos depositados en LA(S) CUENTA(S) que conforman la GARANTÍA MOBILIARIA, ni a celebrar contrato o acto de disposición alguno sobre los mismos, sin el consentimiento previo de COMPARTAMOS.
+
+El incumplimiento de lo dispuesto en la presente cláusula, faculta a COMPARTAMOS a requerir a EL GRUPO o Fiador solidario, el cumplimiento total de las obligaciones pendientes, pudiendo ejecutar la GARANTÍA MOBILIARIA, de conformidad con la Ley de Garantía Mobiliaria, aprobada por Ley N° 28677 y sus normas modificatorias o sustitutorias.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="14" width="572" height="52" uuid="05720eff-bd4c-4159-9167-d0abdb3f6435"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[En la Hoja Resumen se dejará constancia de la forma de contratación elegida por EL GRUPO.
+COMPARTAMOS le enviará un ejemplar de tales documentos al correo electrónico declarado en la Solicitud; y (ii) que en caso lo solicite, COMPARTAMOS le hará entrega de dichos documentos en físico al momento de la contratación, en caso esta sea presencial. Por otro lado, en caso la contratación sea por medios distintos al escrito, COMPARTAMOS le hará entrega del Contrato por dicha vía.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="339" width="572" height="13" uuid="f12a3adb-52d7-4c21-ad3f-fecd6af3d01f"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIGÉSIMA SEGUNDA: CALIDAD DE DEPOSITARIO DE LA GARANTÍA MOBILIARIA ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="352" width="572" height="26" uuid="ef15a84d-a5de-47f8-bca4-3a4845a1007b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS tendrá la calidad de depositario de la GARANTÍA MOBILIARIA, siempre que los fondos depositados en LA(S) CUENTA(S) a nombre de EL GRUPO en calidad de deudor o un Tercero Titular de LA(S) CUENTA(S) constituyentes de la garantía, sean administradas por él. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="391" width="572" height="13" uuid="755fc7f2-662b-42f9-84f4-4fbcb94829aa"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIGÉSIMA TERCERA: EJECUCIÓN DE LA GARANTÍA MOBILIARIA ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="404" width="572" height="195" uuid="63bca00a-f4b9-4c7a-8ea4-39f310b2992f"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Las partes acuerdan expresa e irrevocablemente que, en caso de presentarse un evento de incumplimiento de EL GRUPO de las obligaciones garantizadas, COMPARTAMOS procederá a la inmediata ejecución de la GARANTÍA MOBILIARIA, imputándose el monto derivado de la ejecución a las comisiones, gastos,  las costas y costos procesales, en caso la Autoridad Judicial así lo ordene, las primas del seguro pagadas por COMPARTAMOS, los intereses correspondientes y el capital de la deuda, en ese orden. Cabe precisar  que COMPARTAMOS no podrá trasladar a EL GRUPO el cobro de gastos judiciales, sin perjuicio que en el marco de un proceso judicial iniciado, dichos gastos puedan ser considerados como costas o costos del proceso, lo que dependerá de la decisión judicial.
+
+En caso, los fondos depositados en LA(S) CUENTA(S) a la fecha de efectuarse la ejecución de la GARANTÍA MOBILIARIA señalada en el párrafo anterior, fuese menor que el monto total adeudado por las obligaciones garantizadas, COMPARTAMOS podrá exigir a EL GRUPO el saldo total adeudado.
+
+Una vez ejecutada la presente GARANTÍA MOBILIARIA, COMPARTAMOS notificará de la ejecución a EL GRUPO y a el Tercero
+Titular de LAS(S) CUENTAS(S), según sea el caso, informando el resultado de la liquidación del monto total resultante después de efectuada la ejecución de la GARANTÍA MOBILIARIA de los fondos de LA(S) CUENTA(S) contra el monto total adeudado por las obligaciones garantizadas, ello a través de los medios de comunicación señalados en el presente Contrato, en un plazo máximo no mayor de quince (15) días calendario.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="612" width="572" height="13" uuid="e4143c3e-e468-401d-8a52-338b695aa2b7"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIGESIMA CUARTA: PLAZO DE VIGENCIA DE GARANTÍA MOBILIARIA ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="625" width="572" height="26" uuid="564443bc-73ec-4bde-bffb-a896010afc6e"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[El plazo de la GARANTÍA MOBILIARIA que se constituye y otorga en este documento es indefinido y se mantendrá vigente hasta que EL GRUPO cumpla con efectuar el pago total de las obligaciones frente a COMPARTAMOS. ]]></text>
+			</staticText>
+		</band>
+		<band height="754">
+			<staticText>
+				<reportElement x="3" y="261" width="572" height="39" uuid="f0bdf62f-3ff1-4827-9b36-8c578e049966"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[En el supuesto que COMPARTAMOS haya realizado cobros en exceso mediando dolo o culpa, éstos le serán restituidos a EL GRUPO según los mecanismos establecidos por COMPARTAMOS conforme a la ley aplicable. En estos casos, devengarán los intereses compensatorios que se hayan pactado para la operación crediticia o, en su defecto, el interés legal. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="248" width="572" height="13" uuid="84ddd419-38e2-4519-ba6c-a65787c88cd6"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIGÉSIMA SEXTA: PAGO EN EXCESO ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="326" width="572" height="273" uuid="0fa9ff32-09ec-468e-86af-9c8675243a08"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[EL GRUPO tiene derecho a elegir entre la contratación del seguro ofrecido por COMPARTAMOS o un seguro contratado directamente por EL GRUPO con una Compañía de Seguros. Durante la vigencia del Contrato, EL GRUPO se obliga a contratar y mantener vigente un seguro de desgravamen , el cual puede ser con rescate o devolución, o sin dichos beneficios, a elección de EL GRUPO, siendo beneficiario de la póliza de Seguro Desgravamen exclusivamente COMPARTAMOS, quien en caso de fallecimiento o invalidez total y permanente de EL GRUPO cobrará directamente la indemnización que deba pagar la Compañía de Seguros para aplicarlo hasta donde alcance la amortización y/o cancelación de lo adeudado.
+
+Sin perjuicio de la obligación que asume EL GRUPO, COMPARTAMOS podrá: 1) mantener vigente la póliza de seguro de desgravamen antes señalada ante el incumplimiento de EL GRUPO (falta de renovación, incumplimiento de pago, etc.) y, en tal caso, éste deberá reembolsar a COMPARTAMOS de inmediato los pagos realizados; o 2) en caso EL GRUPO financie el seguro con COMPARTAMOS, EL GRUPO autoriza a COMPARTAMOS, con su firma en el Contrato, a incluir el costo total de la póliza tomada dentro del rubro consumos que se encuentran detallados en el Cronograma de Pagos.
+
+EL GRUPO declara conocer que la responsabilidad de contratación o renovación de la póliza de seguro le corresponde únicamente a él, por lo que, a falta de contratación o renovación de la póliza de seguro, no genera responsabilidad a COMPARTAMOS, al ser un seguro contratado directa y voluntariamente por el propio GRUPO. En caso COMPARTAMOS sea el contratante, se hará responsable de la renovación de la póliza. La Compañía de Seguros con la que EL GRUPO haya contratado, sea o no a través de COMPARTAMOS deberá informarle de cualquier cambio, variación, modificación o supresión de las condiciones de su seguro contratado, COMPARTAMOS no está obligada a, realizar notificaciones de tales cambios y/o supresiones y de todas sus implicancias y consecuencias; siempre que COMPARTAMOS no sea el contratante. Además, si las variaciones consistieran en nuevos requerimientos a ser cumplidos o presentados por EL GRUPO, u otros, EL GRUPO se obliga a satisfacerlos y/o a cumplirlos, bajo su exclusiva decisión y responsabilidad de quedar desprotegido del seguro correspondiente.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="313" width="572" height="13" uuid="deaad56d-d1e8-4258-958e-3a87a9225b88"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIGÉSIMA SÉTIMA: DE LOS SEGUROS ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="27" width="572" height="208" uuid="0f23119a-27c9-4d3f-9b36-0ae31c303e69"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[De conformidad con lo establecido en el numeral 11 del artículo 132º de la Ley Nº 26702 – Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de Banca, Seguros y AFP , COMPARTAMOS podrá cobrar (compensar) en forma parcial o total el monto adeudado (obligaciones vencidas y exigibles) por EL GRUPO, quedando autorizado a debitar de cualquier cuenta de los miembros de este último o a liquidar cualquier bien que se encuentre en custodia de COMPARTAMOS. Con la finalidad de cancelar la deuda en la moneda en que ha sido contraída, COMPARTAMOS podrá proceder a la conversión de moneda de acuerdo al tipo de cambio vigente para COMPARTAMOS a la fecha en que se realice la operación. Asimismo, COMPARTAMOS podrá tomar las siguientes acciones: 1. Terminar de manera anticipada el Contrato, en cuyo caso, la consecuencia inmediata será que EL GRUPO se encuentre obligado a pagar el total del Saldo Deudor que tenga con COMPARTAMOS. 2. Bloquear temporal o definitivamente la cuenta. 3. Abrir una cuenta corriente (sin chequera) a nombre de EL GRUPO bajo los términos y condiciones generales que para la apertura de dicha clase de cuentas tenga aprobados en esa ocasión COMPARTAMOS, cargando en esa cuenta los saldos deudores o requerir el pago de su acreencia, según las liquidaciones que practique, de conformidad con la ley aplicable. En cualquiera de los casos antes señalados, COMPARTAMOS comunicará en un plazo posterior no mayor a quince (15) días la aplicación del supuesto correspondiente mediante los mecanismos de comunicación directos establecidos en la cláusula Décimo Quinta. En el supuesto que, se hubiesen procesado Transacciones (abonos y/o cargos, aperturas, duplicidad de códigos, entre otros) con error operativo, EL GRUPO autoriza a COMPARTAMOS, sin previo aviso, a realizar cargos y/o extornos o regularizaciones que se hubiesen podido realizar en la cuenta o crédito, los mismos que, de ser el caso, serán informados con posterioridad a EL GRUPO, de conformidad con los mecanismos de información directos en la cláusula Décimo Quinta. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="14" width="572" height="13" uuid="9837362c-2f25-4588-a1ea-08a59941f8cd"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIGÉSIMA QUINTA: DERECHO DE COMPENSACIÓN: ]]></text>
+			</staticText>
+		</band>
+		<band height="754">
+			<staticText>
+				<reportElement x="3" y="326" width="572" height="182" uuid="a02780bf-b9ad-46d3-b495-b8068a18c632"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[El documento deberá contener datos de EL GRUPO, los cuales tendrán carácter de Declaración Jurada. EL GRUPO se obliga a comunicar en forma inmediata a COMPARTAMOS cualquier cambio en los datos consignados en dicha Solicitud y asumirá la responsabilidad de su falta de actualización. Sin perjuicio de ello, COMPARTAMOS podrá emplear cualquiera de los demás medios previstos en la Ley, así como aquellos que hubieran sido brindados por EL GRUPO con el fin de comunicarse con él. Asimismo, EL GRUPO declara conocer que forman parte del presente Contrato, la Solicitud de crédito, Hoja Resumen y cualquier modificación que pudiera surgir de los mismos, previamente informada, de acuerdo a lo establecido en la legislación vigente, así como toda aquella que se realice producto de un cambio en la legislación aplicable y que le aplique de manera supletoria al presente Contrato.
+
+EL GRUPO es responsable de mantener actualizada la dirección -física y/o electrónica- a la cual indicó que desea recibir sus documentos contractuales y/o información relevante para el crédito solicitado. Si la dirección proporcionada por EL GRUPO para el envío de cualquiera de sus documentos contractuales o información de su crédito no se encuentra apta y/o ésta hace que sea imposible su remisión o envío, EL GRUPO autoriza a COMPARTAMOS a enviarle dicha información a cualquier otra dirección proporcionada por EL GRUPO a COMPARTAMOS, sea esta física, electrónica u por otro medio. Asimismo, EL GRUPO acuerda que la copia del presente Contrato y la Hoja Resumen le será entregada a EL COMITÉ.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="313" width="572" height="13" uuid="23ce642e-2935-4c91-bb2d-a8421e56238b"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIGÉSIMA OCTAVA: DECLARACIÓN JURADA ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="534" width="572" height="39" uuid="a6e9fed1-f3ab-4bd4-9e7c-68eb20b5c864"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[EL GRUPO declara haber prestado su consentimiento sobre la posible gestión de cobranza que deba ser realizada por COMPARTAMOS o por terceros, en caso de incumplimiento de EL GRUPO, Asimismo, EL GRUPO, autoriza en forma expresa a COMPARTAMOS a realizar, de considerarlo necesario, las gestiones de cobranza por vía telefónica, escrita u otro medio, de conformidad con la Ley Aplicable. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="521" width="572" height="13" uuid="bc12f02b-50b1-465f-9139-fa5f9da51a62"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VIGÉSIMA NOVENA: GESTIÓN DE COBRANZA ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="586" width="572" height="13" uuid="ad960e22-9381-41f5-adc2-619198830bd6"/>
+				<textElement>
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRIGÉSIMA: AUTORIZACIÓN PARA GRABAR CONVERSACIONES: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="599" width="572" height="39" uuid="8e38b6ef-4ab9-464a-84b7-25ce6a762086"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[EL GRUPO autoriza a COMPARTAMOS a grabar cualquier tipo de conversación, solicitud, autorización, instrucción, adquisición y en general cualquier otro tipo de orden o manifestación de voluntad, relacionado con EL CRÉDITO, comprometiéndose a mantener absoluta reserva de las mismas.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="14" width="572" height="286" uuid="f8acaa6c-8d5a-41da-947c-01dabdf63bdb"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[De acuerdo con lo señalado, COMPARTAMOS pone a disposición de EL GRUPO información relevante respecto a los seguros ofrecidos por ésta, el derecho de endoso de seguros contratados directamente por EL GRUPO con Compañía de Seguros. En caso COMPARTAMOS acepte una póliza de vida endosada en sustitución del Seguro Desgravamen, que brinde cobertura y plazo mayores a la ofrecida por COMPARTAMOS. El procedimiento aplicable a dicho endoso, entre otros aspectos, de forma previa a la oferta que realiza COMPARTAMOS del(os) seguro(s) ofrecidos por ésta en www.compartamos.com.pe o mediante los medios de comunicación establecidos en la cláusula Décimo Quinta. Si la solicitud de endoso es rechazada por COMPARTAMOS, ésta deberá comunicar a EL GRUPO de este hecho y el motivo asociado, a través de los medios de comunicación directos conforme a lo señalado en la cláusula Décimo Quinta, dentro de los veinte (20) días posteriores a la presentación de la solicitud con la documentación completa. Si EL GRUPO opta por contratar el seguro de desgravamen con una Compañía de Seguros independiente de COMPARTAMOS o endosar un seguro de vida también contratado por EL GRUPO con una Compañía de Seguros diferente de la ofrecida por COMPARTAMOS, ello no generará comisión o gasto adicional para EL GRUPO. En este caso, EL GRUPO deberá endosar la(s) póliza(s) a favor de COMPARTAMOS a más tardar al día hábil siguiente a la entrada en vigencia del Contrato. En el endoso deberá constar la declaración de la Compañía de Seguros en el sentido que COMPARTAMOS es el único beneficiario de la indemnización hasta por el Saldo Deudor.
+Sin perjuicio de la obligación que asume EL GRUPO, COMPARTAMOS podrá, pero no estará obligada a, mantener vigente –pagar, renovar, entre otros- dicha póliza de seguro, toda vez que es el beneficiario. Para tales efectos, EL GRUPO se obliga a instruir a sus familiares a fin de que comuniquen oportunamente a COMPARTAMOS y/o a la Compañía de Seguros correspondiente, de ser el caso, del fallecimiento o invalidez total y permanentede EL GRUPO (tratándose este último de un seguro de desgravamen con rescate o devolución), obligándose a presentar la documentación solicitada por la Compañía de Seguros correspondiente para la aplicación del seguro de desgravamen. Las condiciones de la póliza de desgravamen cuyo único beneficiario será COMPARTAMOS - por el Saldo Deudor-, con el detalle de los beneficios y exclusiones, constan en la póliza que EL GRUPO declara conocer y aceptar. Sin perjuicio de lo indicado en la presente cláusula, ante eventuales variaciones en la conformación de los costos asociados a las pólizas de seguro, dichas variaciones serán informados por la aseguradora conforme a la normativa que le resulte aplicable.
+]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="50">
+			<staticText>
+				<reportElement x="121" y="20" width="454" height="20" uuid="cc7e3f0a-ce4e-4f89-8320-767f9ecab667"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CLAUSULAS CONTRACTUALES APROBADAS MEDIANTE RESOLUCIÓN SBS N° 03619-2021]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="354" y="0" width="221" height="20" uuid="832cabaa-913a-4f9d-87eb-f1c9e4789de3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Fecha de Vigencia: " + $P{credGrupFechaVigencia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="0" width="100" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="38e36003-5087-494f-91bc-d8efe91d99fa"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Rajdhani" size="10" isBold="false" isItalic="true" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Version " + $P{credGrupalVersion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

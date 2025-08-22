@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Plantilla" pageWidth="595" pageHeight="842" columnWidth="575" leftMargin="10" rightMargin="10" topMargin="0" bottomMargin="0" uuid="6858b344-3d5c-4c10-9274-a01177fbc8de">
+	<property name="ireport.zoom" value="1.5000000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="NotRotated" mode="Opaque" forecolor="#D8D8D8" hAlign="Center" vAlign="Middle" rotation="None" fontName="Arial Narrow" fontSize="15"/>
+	<style name="table">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<parameter name="p_logo_movistar" class="java.io.InputStream"/>
+	<parameter name="l_listaCliente" class="java.util.List"/>
+	<detail>
+		<band height="156">
+			<subreport isUsingCache="true">
+				<reportElement style="table_TD" mode="Opaque" x="0" y="0" width="572" height="156" uuid="f0beb770-e285-4c75-a8d6-924b8673acdd"/>
+				<subreportParameter name="p_ruta">
+					<subreportParameterExpression><![CDATA[$P{p_ruta}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{l_listaCliente} ==null|| $P{l_listaCliente}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{l_listaCliente})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta}+"EstimadoCliente_Sub.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

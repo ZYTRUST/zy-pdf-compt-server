@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CondicionesEspecificas" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3d05016e-fcb8-4a3a-9b45-7fa28ee6727d">
+	<property name="ireport.zoom" value="1.771561000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="593"/>
+	<parameter name="p_grupoNombre" class="java.lang.String"/>
+	<parameter name="p_codigoOperacion" class="java.lang.String"/>
+	<parameter name="p_clientePaterno" class="java.lang.String"/>
+	<parameter name="p_clienteMaterno" class="java.lang.String"/>
+	<parameter name="p_clienteNombre1" class="java.lang.String"/>
+	<parameter name="p_clienteNombre2" class="java.lang.String"/>
+	<parameter name="p_clienteCodigo" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualCodigo" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualMonedaSimbolo" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualMonedaDescripcion" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualDesembolsoMonto" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualDesembolsoFecha" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualFrecuenciaPagoCantidad" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualFrecuenciaPagoUnidad" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualPlazoPrestamoCantidad" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualPlazoPrestamoUnidad" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualTEA360" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualTCEA" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualIntCompMontoTotal" class="java.lang.String"/>
+	<parameter name="p_creditoInvididualCanalExternoAutorizacion" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualDesembolsoCompCancelDetalleCreditoCancelar" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualDesembolsoCompCancelMontoEntregado" class="java.lang.String"/>
+	<parameter name="p_creditoIndividualTasaMoraNominalAnual" class="java.lang.String"/>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<parameter name="l_Condicion" class="java.util.List"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\agallegos\\JaspersoftWorkspace\\MyJasperReports\\CondicionesEspecificas\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="489" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="95" width="280" height="20" uuid="9a7b1dba-5687-4579-a3b8-6d178c7b7af3"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[2. Código de Crédito Grupal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="115" width="280" height="20" uuid="a35f0261-3f99-4e7e-8223-614676564ecc"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[3. Nombre del Integrante]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="135" width="280" height="20" uuid="4bc8408d-bee7-4a3a-809e-927196888b96"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[4. Código del Integrante]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="155" width="280" height="20" uuid="69ffdd1c-12ad-4558-993e-b45e82cdc897"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[5. Código de PRESTAMO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="175" width="280" height="20" uuid="6ccf64d9-0085-4196-9d73-e1aafd203e62"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[6. Moneda y Monto del Capital Prestado al Integrante]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="195" width="280" height="20" uuid="94fd6d14-e47e-46a8-ad99-a5b296c6190c"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[7. Fecha de Desembolso]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="215" width="280" height="20" uuid="2b8aa690-8061-44a9-b980-650087c603a1"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[8. Frecuencia de Pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="235" width="280" height="20" uuid="927d6f74-f097-49e0-a0b8-fb42cffaad98"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[9. Plazo de prestamo Desembolsado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="255" width="280" height="30" uuid="e0119d3a-4f7a-47e7-a86c-3d59ebd1540e"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[10. Tasa de Interés Compensatorio Fija Efectiva Anual (TEA 360 días)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="285" width="280" height="20" uuid="1c7aa626-226a-4b88-84bd-4babfce90fef"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[11. Tasa de Costo Efectiva Anual]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="305" width="280" height="20" uuid="a0ebc6eb-bf0d-4d0b-aa87-45a749a1cab8"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[12. Monto Total de los Intereses Compensatorios]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="325" width="280" height="20" uuid="0223f4d1-e478-4f79-be44-29bd18b0eb3c"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[13. Código de autorización en canal externo]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="300" y="75" width="244" height="20" uuid="604ad2dd-8418-4379-98d7-f9872b389c85"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph lineSpacing="Single" firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_grupoNombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="95" width="244" height="20" uuid="886c079e-e527-43e2-befc-2284753649ff"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_codigoOperacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="115" width="244" height="20" uuid="154a3c92-67ba-4940-99fe-05f0043f79df"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_clientePaterno}+" "+$P{p_clienteMaterno}+" "+$P{p_clienteNombre1}+" "+$P{p_clienteNombre2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="135" width="244" height="20" uuid="fad672e2-3700-4fbf-b113-49ddcfa31193"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_clienteCodigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="155" width="244" height="20" uuid="a3cd80a0-821e-41ab-b257-c931740d812f"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_creditoIndividualCodigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="175" width="244" height="20" uuid="e98988cf-a7a9-41a9-a39a-04554db69ac4"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_creditoIndividualMonedaSimbolo}+ " " + $P{p_creditoIndividualDesembolsoMonto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="195" width="244" height="20" uuid="1c79ce94-c08a-4add-bc73-3b3c06ae180f"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_creditoIndividualDesembolsoFecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="215" width="244" height="20" uuid="21f7027f-3d7c-4936-8014-39b9529cccda"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_creditoIndividualFrecuenciaPagoCantidad} + " " + $P{p_creditoIndividualFrecuenciaPagoUnidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="235" width="244" height="20" uuid="e095ef02-40c5-4d15-be2a-eaf109972d4a"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_creditoIndividualPlazoPrestamoCantidad} + " " + $P{p_creditoIndividualPlazoPrestamoUnidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="255" width="244" height="30" uuid="1bd0858a-9253-4e51-b034-9d71585165c9"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_creditoIndividualTEA360}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="285" width="244" height="20" uuid="2423cee0-4681-423f-a30c-56325e97ad00"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_creditoIndividualTCEA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="305" width="244" height="20" uuid="e9684b20-9d2c-4091-a8d9-c283d44d6369"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_creditoIndividualIntCompMontoTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="325" width="244" height="20" uuid="60b2eaca-c6f5-4a95-ab7a-db1eebbdaa0a"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_creditoInvididualCanalExternoAutorizacion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="355" width="280" height="20" uuid="cec09304-aadd-4607-81b2-41aad683642e"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[14. Penalidad por Incumplimiento de Pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="375" width="300" height="20" uuid="de30668c-284b-4604-8bed-505255bf2ad4"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[15. En caso de Desembolso con compromiso de cancelación:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="465" width="534" height="17" uuid="504989ca-4b74-47db-976c-111a30d3cbfa"/>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[16. El monto que se obliga a aportar cada integrante del Grupo para el pago de las cuotas del Crédito Grupal, se detalla a continuación.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="405" width="280" height="50" uuid="72098a9d-89b6-4997-b906-a4a664f2b242"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_creditoIndividualDesembolsoCompCancelDetalleCreditoCancelar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="405" width="254" height="50" uuid="95644470-4394-471a-98b7-a7236c3e0009"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_creditoIndividualDesembolsoCompCancelMontoEntregado}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="75" width="280" height="20" uuid="355e6365-5a65-41b8-b6fd-4aee94940ed5"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[1. Nombre del GRUPO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="43" width="555" height="20" uuid="43ac2b2d-6551-43b1-9e75-908ca8b63d43"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Narrow" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Condiciones Específicas para cada integrante de EL GRUPO]]></text>
+			</staticText>
+		</band>
+		<band height="287">
+			<subreport>
+				<reportElement x="10" y="0" width="534" height="270" uuid="23002e13-c9ef-426e-9380-a2f0af4a56fd"/>
+				<dataSourceExpression><![CDATA[$P{l_Condicion} ==null|| $P{l_Condicion}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{l_Condicion})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta} + "CondicionesEspecificas_subReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="87">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="40" uuid="0eb7160a-5d4e-4602-aa70-d98d9558c91b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[En caso haya comprado el seguro, autorizo se descuente del monto a desembolsar el pago de la prima del seguro cuyo importe se encuentra indicado en el Plan de Pagos del Seguro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="555" height="40" uuid="21976382-06c6-41ed-a614-1b9fb6a1f5f9"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[(*) Tasa de interés moratorio Nominal Anual se cobrará a EL CLIENTE en caso de incumplimiento de pago, se devengará de manera adicional a la tasa de interés compensatorio desde el día siguiente a la fecha de vencimiento de la obligación hasta el día de su pago total.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="10" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

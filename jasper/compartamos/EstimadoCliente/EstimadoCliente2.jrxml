@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Plantilla" pageWidth="595" pageHeight="842" columnWidth="575" leftMargin="10" rightMargin="10" topMargin="0" bottomMargin="0" uuid="6858b344-3d5c-4c10-9274-a01177fbc8de">
+	<property name="ireport.zoom" value="1.5000000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="245"/>
+	<style name="NotRotated" mode="Opaque" forecolor="#D8D8D8" hAlign="Center" vAlign="Middle" rotation="None" fontName="Arial Narrow" fontSize="15"/>
+	<style name="table">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<parameter name="p_logo_movistar" class="java.io.InputStream"/>
+	<parameter name="p_firma_tdp" class="java.io.InputStream"/>
+	<parameter name="p_Apellidos" class="java.lang.String"/>
+	<parameter name="p_Nombres" class="java.lang.String"/>
+	<parameter name="p_R_Linea1" class="java.lang.String"/>
+	<parameter name="p_R_Linea2" class="java.lang.String"/>
+	<parameter name="p_R_Codigo_Postal" class="java.lang.String"/>
+	<parameter name="p_P_Linea1" class="java.lang.String"/>
+	<parameter name="p_P_Linea2" class="java.lang.String"/>
+	<parameter name="p_P_Pais" class="java.lang.String"/>
+	<parameter name="p_P_Codigo_Postal" class="java.lang.String"/>
+	<parameter name="p_Fecha_Nacimiento" class="java.lang.String"/>
+	<parameter name="p_Ciudad_Nacimiento" class="java.lang.String"/>
+	<parameter name="p_Pais_Nacimiento" class="java.lang.String"/>
+	<parameter name="p_Razon_Social1" class="java.lang.String"/>
+	<parameter name="p_Razon_Social2" class="java.lang.String"/>
+	<parameter name="p_Razon_Social3" class="java.lang.String"/>
+	<parameter name="p_Juridiccion1" class="java.lang.String"/>
+	<parameter name="p_Juridiccion2" class="java.lang.String"/>
+	<parameter name="p_Juridiccion3" class="java.lang.String"/>
+	<parameter name="p_Tipo_Referencia_Fiscal1" class="java.lang.String"/>
+	<parameter name="p_Tipo_Referencia_Fiscal2" class="java.lang.String"/>
+	<parameter name="p_Tipo_Referencia_Fiscal3" class="java.lang.String"/>
+	<parameter name="p_Nro_Registro1" class="java.lang.String"/>
+	<parameter name="p_Nro_Registro2" class="java.lang.String"/>
+	<parameter name="p_Nro_Registro3" class="java.lang.String"/>
+	<parameter name="p_Tipo_Razon" class="java.lang.String"/>
+	<parameter name="p_Nombre_Completo" class="java.lang.String"/>
+	<parameter name="p_Fecha" class="java.lang.String"/>
+	<parameter name="p_Calidad" class="java.lang.String"/>
+	<parameter name="p_Tip_Certificado" class="java.lang.String"/>
+	<parameter name="p_R_Pais" class="java.lang.String"/>
+	<parameter name="p_T_aE1" class="java.lang.String"/>
+	<parameter name="p_T_bE1" class="java.lang.String"/>
+	<parameter name="p_T_cE1" class="java.lang.String"/>
+	<parameter name="p_T_dE1" class="java.lang.String"/>
+	<parameter name="p_T_eE1" class="java.lang.String"/>
+	<parameter name="p_T_fE1" class="java.lang.String"/>
+	<parameter name="p_T_gE1" class="java.lang.String"/>
+	<parameter name="p_T_hE1" class="java.lang.String"/>
+	<parameter name="p_T_iE1" class="java.lang.String"/>
+	<parameter name="p_T_jE1" class="java.lang.String"/>
+	<parameter name="p_T_kE1" class="java.lang.String"/>
+	<parameter name="p_T_lE1" class="java.lang.String"/>
+	<parameter name="p_T_mE1" class="java.lang.String"/>
+	<parameter name="p_T_aE2" class="java.lang.String"/>
+	<parameter name="p_T_bE2" class="java.lang.String"/>
+	<parameter name="p_T_cE2" class="java.lang.String"/>
+	<parameter name="p_T_dE2" class="java.lang.String"/>
+	<parameter name="p_T_eE2" class="java.lang.String"/>
+	<parameter name="p_T_fE2" class="java.lang.String"/>
+	<parameter name="p_T_gE2" class="java.lang.String"/>
+	<parameter name="p_T_iE2" class="java.lang.String"/>
+	<parameter name="p_T_jE2" class="java.lang.String"/>
+	<parameter name="p_T_kE2" class="java.lang.String"/>
+	<parameter name="p_T_lE2" class="java.lang.String"/>
+	<parameter name="p_T_mE2" class="java.lang.String"/>
+	<parameter name="p_T_aE3" class="java.lang.String"/>
+	<parameter name="p_T_bE3" class="java.lang.String"/>
+	<parameter name="p_T_cE3" class="java.lang.String"/>
+	<parameter name="p_T_dE3" class="java.lang.String"/>
+	<parameter name="p_T_eE3" class="java.lang.String"/>
+	<parameter name="p_T_fE3" class="java.lang.String"/>
+	<parameter name="p_T_gE3" class="java.lang.String"/>
+	<parameter name="p_T_hE3" class="java.lang.String"/>
+	<parameter name="p_T_iE3" class="java.lang.String"/>
+	<parameter name="p_T_jE3" class="java.lang.String"/>
+	<parameter name="p_T_kE3" class="java.lang.String"/>
+	<parameter name="p_T_lE3" class="java.lang.String"/>
+	<parameter name="p_T_mE3" class="java.lang.String"/>
+	<parameter name="p_T_hE2" class="java.lang.String"/>
+	<parameter name="p_Opcion1" class="java.lang.String"/>
+	<parameter name="p_Opcion2" class="java.lang.String"/>
+	<parameter name="p_DNI" class="java.lang.String"/>
+	<parameter name="p_Nombre" class="java.lang.String"/>
+	<pageHeader>
+		<band height="83">
+			<image isUsingCache="true" isLazy="true" onErrorType="Blank">
+				<reportElement x="75" y="23" width="236" height="44" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="b90b8de1-918e-45e0-a7aa-da13b285aa8f"/>
+				<imageExpression><![CDATA[$P{p_logo_movistar}]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="255">
+			<staticText>
+				<reportElement x="73" y="11" width="102" height="14" uuid="e0ce6a83-99d0-4363-bf2e-81eaa1f14ba8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Estimado Cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="168" width="431" height="70" uuid="90d4563c-8fea-4848-8f47-ff855803497b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[El endoso consiste en ceder parte de la suma asegurada de su seguro de vida vigente para que,
+en caso de siniestro (fallecimiento o invalidez), se cubra la deuda pendiente del crédito
+contratado. En caso optar por endosar el seguro desgravamen, corresponde que Compartamos
+Financiera realice una evaluación con la finalidad de identificar que se cumplan con los
+requisitos mínimos establecidos. Para ello el cliente deberá presentar:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="111" width="431" height="44" uuid="a902557b-b998-425b-8bf5-ab772a7061f8"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[La contratación de un seguro de desgravamen es una condición necesaria para el desembolso
+de un Crédito en Compartamos Financiera; sin embargo, puedes optar por la contratación
+directa con nosotros o puedes endosar tu póliza con la aseguradora de tu elección.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="41" width="431" height="56" uuid="504596eb-e013-4f48-ad8c-6a740002db5e"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[El Seguro de Desgravamen es un seguro que tiene por objeto pagar, en caso de fallecimiento o
+invalidez total y permanente, la deuda que mantiene en Compartamos Financiera con un
+crédito contratado, en beneficio de sus herederos, quienes se verán liberados de la obligación
+de pago del crédito mencionado.]]></text>
+			</staticText>
+		</band>
+		<band height="172">
+			<staticText>
+				<reportElement x="71" y="97" width="431" height="49" uuid="f4e9cf02-2fea-4370-a2e8-6d5a0fb723ef"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="10" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[La evaluación y posterior respuesta se le notificará en un plazo máximo de 20 días calendario,
+contados desde la presentación de los documentos completos para la evaluación. En caso la
+respuesta sea positiva podrá desembolsar el monto solicitado, de ser negativa, solo podrá
+desembolsar contratando el seguro de desgravamen de Compartamos Financiera.
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="10" width="431" height="70" uuid="c8b77859-57ca-4be4-8b4b-d55aebf4350f"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="10" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[•   Póliza del seguro vida original completa, con coberturas similares o mayores al seguro
+desgravamen ofrecido por Compartamos y por plazos iguales o mayores
+•   Declaración de la compañía de seguros elegida por el cliente (Original del Endoso cesión de
+derechos debidamente endosado a Compartamos Financiera)
+•    Copia del comprobante de prima pagado mínimo por un año.
+
+]]></text>
+			</staticText>
+		</band>
+		<band height="299">
+			<staticText>
+				<reportElement x="221" y="180" width="100" height="17" uuid="557f6218-5051-4737-9b2a-fc1d6a9d4794"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="10" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Endoso de Seguro.
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="60" width="324" height="17" uuid="2c40230a-6d2a-4617-91cb-1109882b23ce"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[_____________________________________________________________________
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="126" width="128" height="17" uuid="69d9b17e-c4a4-40d4-b560-c05e00850a42"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="10" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Eligiendo la opción de :
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="60" width="70" height="17" uuid="9650699b-888e-4a5b-b5ca-cbb9fa388170"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="10" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Por lo tanto,
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="215" width="148" height="17" uuid="eff73eb9-854c-4619-8953-ef3aa32b2ed8"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[_____________________________________________________________________
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="250" width="29" height="17" uuid="bfbf948c-8bfa-497c-a8a0-8be0f5f9769c"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Calibri" size="10" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="250" width="148" height="17" uuid="f512ff65-e8f1-49d3-8f4c-14587faa39b3"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[_____________________________________________________________________
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="77" width="279" height="17" uuid="67f1a73d-630d-458d-8a72-f5e406b08eef"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[_____________________________________________________________________
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="0" width="431" height="49" uuid="4995985c-f601-4455-89d4-9ccc5af9a798"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="10" isBold="true" isItalic="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Si la póliza presentada deja de estar activa, automáticamente se contratará el seguro de
+desgravamen con la aseguradora de la empresa y el cobro será según tarifario vigente
+viéndose reflejado en el cronograma de pagos.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="94" width="431" height="17" uuid="a98d08fa-6ccd-4c59-9cf2-e289207fc46f"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="10" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[ha sido informado y está de acuerdo con las condiciones según la elección de su preferencia
+]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="154" y="160" width="60" height="13" uuid="90ede133-4d8b-4cb0-bb8f-404cf972a42c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="125" y="232" width="29" height="17" uuid="d61d3a22-7360-469e-9eb2-aa0e94f70cab"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Firma]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="143" width="236" height="17" uuid="e2382861-3307-4f16-bc15-8abae89b0660"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="10" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Seguro de Desgravamen comercializado por CF
+
+]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="154" y="180" width="60" height="13" uuid="3f91810d-a7aa-4007-84eb-020fc556af4e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="73" y="77" width="115" height="17" uuid="3aa2538c-c6bb-4685-a624-f951bd8efef6"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Calibri" size="10" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[, identificado con DOI
+
+]]></text>
+			</staticText>
+			<image>
+				<reportElement mode="Transparent" x="86" y="197" width="115" height="27" uuid="3714f65a-5293-4dc4-9200-38dcd50782ee"/>
+				<imageExpression><![CDATA[$P{p_firma_tdp}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="174" y="60" width="235" height="20" uuid="0b16191c-9ebb-483f-aaaf-a004f7286ff1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="77" width="235" height="17" uuid="f0d314f1-3dab-4b16-bae7-a03c6f2e3e0e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_DNI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="156" width="77" height="20" uuid="2e63f1c3-f93e-4257-9c37-ff1c99742d58"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Opcion1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="176" width="77" height="20" uuid="f90b0727-b1b7-421e-995b-afae30748c6b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Opcion2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="247" width="77" height="20" uuid="b976c7e8-cb9f-4f6c-a788-5d858c5b63d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

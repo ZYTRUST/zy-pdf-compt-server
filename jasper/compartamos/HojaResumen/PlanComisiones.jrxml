@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PlanPagos" pageWidth="550" pageHeight="750" columnWidth="550" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="66a2ace3-dd29-452f-ae26-480754f8c073">
+	<property name="ireport.zoom" value="1.7715610000000055"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="comisionCategoria" class="java.lang.String"/>
+	<field name="comisionDenominacion" class="java.lang.String"/>
+	<field name="comisionTipoTransaccion" class="java.lang.String"/>
+	<field name="comisionMontoFijoSoles" class="java.math.BigDecimal"/>
+	<field name="comisionMontoFijoDolares" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="26">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==1]]></printWhenExpression>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="117" height="26" backcolor="#C0C0C0" uuid="91970162-0f39-42fc-ac60-c4e62cc5e4e5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CATEGORÍA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="117" y="0" width="104" height="26" backcolor="#C0C0C0" uuid="0235fac7-51d8-4b2e-9177-750a1dfe9d63"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DENOMINACIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="390" y="0" width="156" height="13" backcolor="#C0C0C0" uuid="4b5e9217-2fc2-4380-acf5-0e02b1ea540a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MONTO FIJO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="221" y="0" width="169" height="26" backcolor="#C0C0C0" uuid="089fb60c-0524-41d2-b944-b0d9618d6242"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TIPO DE TRANSACCIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="390" y="13" width="78" height="13" backcolor="#C0C0C0" uuid="13f3fb64-5d36-4750-9d8d-66f6087fecee"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOLES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="468" y="13" width="78" height="13" backcolor="#C0C0C0" uuid="8adf1e8c-da12-451d-b850-95dc504e9091"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOLARES]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="117" y="0" width="104" height="39" uuid="92e1888f-d733-4d43-8d25-b9ee1f7fda6f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comisionDenominacion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="221" y="0" width="169" height="39" uuid="6439ff85-151c-440b-a847-612bb346d222"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comisionTipoTransaccion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="390" y="0" width="78" height="39" uuid="ebc9ad34-5903-47fd-ab0e-aaeaf27c7710"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comisionMontoFijoSoles}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="468" y="0" width="78" height="39" uuid="819c047f-95af-4bb1-9f5c-2b076652ddc6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comisionMontoFijoDolares}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="117" height="39" uuid="d7beb518-9c58-464a-a031-074f3e5d7ff0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comisionCategoria}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

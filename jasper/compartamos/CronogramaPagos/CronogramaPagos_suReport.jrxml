@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CondicionesEspecificas_subReport" pageWidth="802" pageHeight="565" orientation="Landscape" columnWidth="782" leftMargin="10" rightMargin="10" topMargin="0" bottomMargin="0" uuid="1f4f64cf-bd98-404e-a06b-ff343b571081">
+	<property name="ireport.zoom" value="2.4157650000000026"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<parameter name="l_listaSeguro" class="java.util.List"/>
+	<field name="cliNombre1" class="java.lang.String"/>
+	<field name="cliNombre2" class="java.lang.String"/>
+	<field name="cliPaterno" class="java.lang.String"/>
+	<field name="cliMaterno" class="java.lang.String"/>
+	<field name="cliCodigo" class="java.math.BigDecimal"/>
+	<field name="listaSegOptativo" class="java.util.List"/>
+	<detail>
+		<band height="45">
+			<textField>
+				<reportElement x="173" y="2" width="433" height="20" uuid="781747ff-3028-47ae-be29-32b2434725b4"/>
+				<textFieldExpression><![CDATA[$F{cliPaterno} + " " + $F{cliMaterno} + " " +  $F{cliNombre1} + " " + $F{cliNombre2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="22" width="128" height="20" uuid="5c1862dd-902b-4c4a-bd11-fab4f81c4456"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CÓDIGO DEL CLIENTE:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="22" width="433" height="20" uuid="74b5d0fe-35a5-4e39-bf76-96a841180bb4"/>
+				<textFieldExpression><![CDATA[$F{cliCodigo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="2" width="128" height="20" uuid="8f25a46f-861f-4165-b9be-1a5c3fa80014"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE DEL CLIENTE:]]></text>
+			</staticText>
+		</band>
+		<band height="153">
+			<subreport>
+				<reportElement x="10" y="0" width="640" height="153" uuid="8b9d5de5-a4cd-4024-9c4a-0acaac81e2dd"/>
+				<subreportParameter name="p_ruta">
+					<subreportParameterExpression><![CDATA[$P{p_ruta}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$F{listaSegOptativo} ==null|| $F{listaSegOptativo}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaSegOptativo})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta} + "CronogramaPagos_suCabReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

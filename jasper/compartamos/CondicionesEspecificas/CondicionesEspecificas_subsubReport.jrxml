@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CondicionesEspecificas_subReport" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="1f4f64cf-bd98-404e-a06b-ff343b571081">
+	<property name="ireport.zoom" value="1.9487171000000019"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="cuoIndFecha" class="java.lang.String"/>
+	<field name="cuoIndNumero" class="java.math.BigDecimal"/>
+	<field name="cuoIndValor" class="java.math.BigDecimal"/>
+	<field name="cuoIndMontoCapital" class="java.math.BigDecimal"/>
+	<field name="cuoIndMontoIntComp" class="java.math.BigDecimal"/>
+	<field name="cuoIndMontoSegDesgravamen" class="java.math.BigDecimal"/>
+	<field name="cuoIndITF" class="java.math.BigDecimal"/>
+	<field name="cuoIndMontoSegTodoRiesg" class="java.math.BigDecimal"/>
+	<variable name="cuoIndValor_1" class="java.math.BigDecimal" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{cuoIndValor}]]></variableExpression>
+	</variable>
+	<variable name="cuoIndMontoCapital_1" class="java.math.BigDecimal" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{cuoIndMontoCapital}]]></variableExpression>
+	</variable>
+	<variable name="cuoIndMontoIntComp_1" class="java.math.BigDecimal" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{cuoIndMontoIntComp}]]></variableExpression>
+	</variable>
+	<variable name="cuoIndMontoSegDesgravamen_1" class="java.math.BigDecimal" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{cuoIndMontoSegDesgravamen}]]></variableExpression>
+	</variable>
+	<variable name="cuoIndITF_1" class="java.math.BigDecimal" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{cuoIndITF}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="6" splitType="Stretch"/>
+	</title>
+	<columnHeader>
+		<band height="45">
+			<staticText>
+				<reportElement x="466" y="0" width="54" height="40" uuid="1f0ed15a-4c30-4828-bb0f-a58fdacb5e97"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[SEC INC.
+TODO RSGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="0" width="76" height="40" uuid="30bb1c41-3145-4c2d-ab70-57709559a342"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[CAPITAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="0" width="34" height="40" uuid="a51bc445-f931-43f1-89a8-8c32d9ad7a61"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[NRO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="412" y="0" width="54" height="40" uuid="dd9198af-4fda-4be5-93b9-53e2264e63ef"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[ITF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="0" width="54" height="40" uuid="9d19e615-3592-408d-9007-1f7ff93027df"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[FECHA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="0" width="76" height="40" uuid="c7dc959e-8e10-4933-b44f-0fdac61f7e18"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[INTERES
+COMP.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="0" width="76" height="40" uuid="05757ca9-5063-44c2-9f50-f3697d8a6bd1"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Narrow" size="11"/>
+				</textElement>
+				<text><![CDATA[SEGURO
+DESG.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="0" width="76" height="40" uuid="d79636c3-bf78-43ff-983e-10fb40149226"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[VALOR CUOTA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="0" width="54" height="20" uuid="9b256829-f1f7-411a-87f7-7747255207de"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoIndFecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="74" y="0" width="34" height="20" uuid="06fdb2ec-1025-45bf-9576-466b22029218"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph firstLineIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoIndNumero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="108" y="0" width="76" height="20" uuid="93ffee5a-7b22-4323-8ae7-434b1a36abfd"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph firstLineIndent="3" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoIndValor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="0" width="76" height="20" uuid="6b2657d9-fb3f-4f35-b904-e3a7c90af20e"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph firstLineIndent="3" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoIndMontoCapital}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="0" width="76" height="20" uuid="6be9534c-42e9-4e23-98c4-b968f7d1466d"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph firstLineIndent="3" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoIndMontoIntComp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="336" y="0" width="76" height="20" uuid="362d7e9b-274b-4906-9a20-ae1327d1636f"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph firstLineIndent="3" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoIndMontoSegDesgravamen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="412" y="0" width="54" height="20" uuid="6694c648-7678-4026-b1a5-ba472d1ca8a0"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph firstLineIndent="3" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoIndITF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="466" y="0" width="54" height="20" uuid="d7d39b25-a32e-475d-a36a-f654c78af8d3"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph firstLineIndent="3" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoIndMontoSegTodoRiesg}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="108" y="0" width="358" height="20" uuid="c9a8dfff-6a85-4e51-abc3-d6f63de9ff5e"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="0" width="54" height="20" uuid="8a0a3b2e-ec4c-496b-93c4-bb22db0694a1"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Totales]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="0" width="34" height="20" uuid="77845e2e-df88-442a-b48b-4d552e281815"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[S/.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="30" width="286" height="20" uuid="3a0d9710-22a3-4a29-abbc-6a888e00e753"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Tasa de interés Moratorio Nominal Anual *             11.824680]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="30" width="160" height="20" uuid="4eee7c0c-3703-473f-a0f6-56033a48e14d"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="108" y="0" width="76" height="20" uuid="0665395c-d270-4b45-9971-36430dfe93e4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+					<paragraph rightIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{cuoIndValor_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="185" y="0" width="76" height="20" uuid="a7fd1fd1-ab60-4563-8d3d-9e4dfeaa6290"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+					<paragraph rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{cuoIndMontoCapital_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="338" y="0" width="74" height="20" uuid="ad360e18-f88a-48be-b311-eecf15c70c6d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+					<paragraph rightIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{cuoIndMontoSegDesgravamen_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="412" y="0" width="54" height="20" uuid="c5943015-24a2-470b-bc5b-d0be43302b0b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+					<paragraph rightIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{cuoIndITF_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="336" y="0" width="76" height="20" uuid="5aab269c-3435-4dee-9bf3-9a1116d85a9e"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph rightIndent="2"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="0" width="76" height="20" uuid="79d23d2d-c24f-4417-aa22-d7a608f94e94"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="261" y="0" width="75" height="20" uuid="36a66bad-4d2a-4710-b78d-13f251edf453"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+					<paragraph rightIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{cuoIndMontoIntComp_1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

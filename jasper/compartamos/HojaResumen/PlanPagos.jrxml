@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PlanPagos" pageWidth="550" pageHeight="750" columnWidth="550" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="66a2ace3-dd29-452f-ae26-480754f8c073">
+	<property name="ireport.zoom" value="1.6105100000000048"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="cuoGrupFecha" class="java.lang.String"/>
+	<field name="cuoGrupNumero" class="java.lang.String"/>
+	<field name="cuoGrupMontoDesembolso" class="java.math.BigDecimal"/>
+	<field name="cuoGrupValor" class="java.math.BigDecimal"/>
+	<field name="cuoGrupMontoCapital" class="java.math.BigDecimal"/>
+	<field name="cuoGrupMontoIntComp" class="java.math.BigDecimal"/>
+	<field name="cuoGrupMontoSegDesgravamen" class="java.math.BigDecimal"/>
+	<field name="cuoGrupMontoSegTodoRiesg" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="26" splitType="Prevent">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="52" height="26" uuid="91970162-0f39-42fc-ac60-c4e62cc5e4e5"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="0" width="105" height="26" uuid="089fb60c-0524-41d2-b944-b0d9618d6242"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Monto Desembol.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="0" width="26" height="26" uuid="0235fac7-51d8-4b2e-9177-750a1dfe9d63"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nro.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="0" width="65" height="26" uuid="4b5e9217-2fc2-4380-acf5-0e02b1ea540a"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Cuota]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="0" width="51" height="26" uuid="428022d6-c404-44e7-9363-79a8c202375e"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Capital]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="0" width="65" height="26" uuid="2d8877f2-1d23-4959-bc33-a9651cc3e178"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Interés Comp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="0" width="65" height="26" uuid="57446c98-581d-4b79-8c6c-d1c8f4f44f6b"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Seguro Desg.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="0" width="117" height="26" uuid="6450dc43-af16-481a-b4b4-b9ff91248978"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Seg. Inc. Todo Rsgo]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="52" height="14" uuid="1fc87100-cc06-4af2-a507-eedf91ef2772"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoGrupFecha}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="299" y="0" width="65" height="14" uuid="69d2ea62-bf50-4a4c-b2f1-191bfe44a93b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoGrupMontoIntComp}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="364" y="0" width="65" height="14" uuid="5f7e2a5a-4121-4fe4-b99a-30bb08a3d3e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoGrupMontoSegDesgravamen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="429" y="0" width="117" height="14" uuid="58bb6e78-8045-486d-9816-1e9ecfb617cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoGrupMontoSegTodoRiesg}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="78" y="0" width="104" height="14" uuid="d67613b7-54c5-491d-9458-9a0016098a6b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoGrupMontoDesembolso}.toString().equals("0.00") ? "" : $F{cuoGrupMontoDesembolso}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="182" y="0" width="65" height="14" uuid="06cc44af-30a5-4e3b-8a5f-1ad48000c70e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoGrupValor}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="247" y="0" width="52" height="14" uuid="5b793019-5879-4cf4-b456-a68e4bfeb2a3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoGrupMontoCapital}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="52" y="0" width="26" height="14" uuid="b402ec2d-69cc-4cfc-bdf6-e60e17e8eb0b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuoGrupNumero}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

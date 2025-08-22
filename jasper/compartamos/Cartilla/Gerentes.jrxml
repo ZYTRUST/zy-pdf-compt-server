@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Gerentes" columnCount="2" printOrder="Horizontal" pageWidth="595" pageHeight="750" columnWidth="272" columnSpacing="50" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="66a2ace3-dd29-452f-ae26-480754f8c073">
+	<property name="ireport.zoom" value="2.4157650000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="firmanteFirmaJasper" class="java.io.InputStream"/>
+	<field name="firmanteNombre1" class="java.lang.String"/>
+	<field name="firmanteNombre2" class="java.lang.String"/>
+	<field name="firmantePaterno" class="java.lang.String"/>
+	<field name="firmanteMaterno" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="50" splitType="Stretch">
+			<image hAlign="Center" vAlign="Middle" isUsingCache="true" onErrorType="Blank">
+				<reportElement mode="Transparent" x="0" y="0" width="245" height="50" uuid="4a4e2b0f-1bf9-4d00-bcc0-f5acc14f13ba"/>
+				<imageExpression><![CDATA[$F{firmanteFirmaJasper}]]></imageExpression>
+			</image>
+		</band>
+		<band height="16">
+			<textField>
+				<reportElement x="0" y="1" width="245" height="13" isRemoveLineWhenBlank="true" uuid="ccab1e33-8009-4502-8c48-39d170be46fa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firmanteNombre1}+" "+$F{firmanteNombre2}+" "+$F{firmantePaterno}+" "+$F{firmanteMaterno}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="13" width="245" height="1" uuid="b2e3c5a9-d099-4421-8dab-bb5d507b4a5b"/>
+			</line>
+		</band>
+		<band height="18">
+			<staticText>
+				<reportElement x="0" y="0" width="245" height="13" uuid="1fee681a-b862-47d4-987e-ede8a7d94ce7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[P. COMPARTAMOS FINANCIERA]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

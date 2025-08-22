@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CondicionesEspecificas_subReport" pageWidth="565" pageHeight="802" columnWidth="545" leftMargin="10" rightMargin="10" topMargin="0" bottomMargin="0" uuid="1f4f64cf-bd98-404e-a06b-ff343b571081">
+	<property name="ireport.zoom" value="1.5000000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1407"/>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<parameter name="p_logo_movistar" class="java.io.InputStream"/>
+	<parameter name="p_firma_tdp" class="java.io.InputStream"/>
+	<parameter name="p_fecha" class="java.lang.String"/>
+	<parameter name="p_firma_testigo" class="java.io.InputStream"/>
+	<parameter name="p_firma_asegurado" class="java.io.InputStream"/>
+	<parameter name="p_firma_director" class="java.io.InputStream"/>
+	<field name="cliNombre1" class="java.lang.String"/>
+	<field name="cliNombre2" class="java.lang.String"/>
+	<field name="cliPaterno" class="java.lang.String"/>
+	<field name="cliMaterno" class="java.lang.String"/>
+	<field name="cliDocumentoTipoDescripcion" class="java.lang.String"/>
+	<field name="cliDocumentoNumero" class="java.lang.String"/>
+	<field name="cliFechaNacimiento" class="java.lang.String"/>
+	<field name="cliSexo" class="java.lang.String"/>
+	<field name="cliEstadoCivil" class="java.lang.String"/>
+	<field name="cliOcupacion" class="java.lang.String"/>
+	<field name="cliDireccion" class="java.lang.String"/>
+	<field name="cliProvincia" class="java.lang.String"/>
+	<field name="cliDepartamento" class="java.lang.String"/>
+	<field name="cliCelular" class="java.lang.String"/>
+	<field name="cliCorreo" class="java.lang.String"/>
+	<field name="creditoIndividual" class="java.lang.Object"/>
+	<detail>
+		<band height="112">
+			<staticText>
+				<reportElement x="42" y="7" width="386" height="15" forecolor="#FFFFFF" uuid="7f64760b-f72b-44a8-8a99-54bd5d80aad1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="12" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[DATOS DEL CONTRATANTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="22" width="386" height="15" uuid="63c91b2c-1cbd-4d85-b242-a4e4f6a519b0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="12" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[MAPFRE PERU VIDA, Compañía de Seguros y Reaseguros - RUC 20418896915]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="52" width="10" height="15" uuid="ec0e31e8-5e82-427e-ba6c-f11113551442"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="12" isBold="true" isItalic="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[T
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="67" width="386" height="15" uuid="b5ddce8f-d2b6-4735-8324-659db59e7e4c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="12" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Certificado N° 44911316210,
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="82" width="386" height="15" uuid="2c73368b-cf81-4e10-b1f8-00fa75e09913"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="12" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Póliza Seguro De Desgravamen Compartamos Financiera]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="97" width="479" height="15" uuid="a34fa8bb-e54a-4b91-9939-d587c79eb8e2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="12" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Adecuado a la ley N° 29946 y sus normas reglamentarias 	Póliza Grupo N°61100085]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="37" width="296" height="15" uuid="4d298f09-5644-4b00-bd78-1b8d19ac9af9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="12" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Av. 28 de Julio 873, Miraflores, Lima, Perú]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="52" width="296" height="15" uuid="36502e29-d9d8-4246-b4b3-b29ff7e28454"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="12" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[(511)213 3333 www.mapfre.com.pe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="37" width="386" height="15" uuid="9653a951-bc0f-43b5-b6a5-ec9599e1a692"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="12" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Oficina Principal:]]></text>
+			</staticText>
+			<image isUsingCache="true" isLazy="true" onErrorType="Blank">
+				<reportElement x="428" y="21" width="100" height="25" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="fe25851f-dd4b-4b30-ade0-6a477c603ee9"/>
+				<imageExpression><![CDATA[$P{p_logo_movistar}]]></imageExpression>
+			</image>
+		</band>
+		<band height="394">
+			<staticText>
+				<reportElement x="252" y="168" width="291" height="0" forecolor="#000000" uuid="d612d8dd-1923-4609-b27e-f7bbc7568cbd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Muerte Natural]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="10" width="534" height="14" backcolor="#A6A6A6" uuid="4f87b152-dfa8-46ed-a646-d7c42a21924e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="24" width="107" height="14" backcolor="#FFFFFF" uuid="0c3f9cce-ac65-4f0d-9290-ccacc01812c9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="38" width="534" height="14" backcolor="#FFFFFF" uuid="07608c43-4ec8-4bc4-a734-299c1d48b87c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="117" y="24" width="229" height="14" backcolor="#FFFFFF" uuid="7a2e9af3-8315-435b-b7e0-192bcfddc9d0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="66" width="267" height="14" backcolor="#FFFFFF" uuid="a05d91b9-5655-48a9-9e79-ccbcb0476aab"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="80" width="534" height="14" backcolor="#A6A6A6" uuid="df20cc99-668c-4418-be64-2fbdffcfc5c3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="108" width="67" height="14" backcolor="#FFFFFF" uuid="2f8e9de2-9906-4e41-aec7-7213904e4657"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="122" width="79" height="14" backcolor="#FFFFFF" uuid="68339a12-495e-4de1-ad36-130fa7c4c814"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="136" width="79" height="14" backcolor="#FFFFFF" uuid="fee14b51-b71a-4ae5-aeae-e5b2ac60da9e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="150" width="79" height="14" backcolor="#FFFFFF" uuid="bdb46f82-c1d1-4cf6-a56c-8d06a5d236e7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="164" width="79" height="14" backcolor="#FFFFFF" uuid="4105395e-093e-401a-9823-18976c87097b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="178" width="534" height="14" backcolor="#A6A6A6" uuid="4ec6eb2a-8bae-4c56-b188-214ba1f855e5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="192" width="534" height="39" backcolor="#FFFFFF" uuid="9a62a8a6-47a4-4a79-a5cb-f778349c767a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="231" width="534" height="14" backcolor="#A6A6A6" uuid="c6797960-1a2b-4b43-95d5-7774118299ea"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="311" width="79" height="15" backcolor="#FFFFFF" uuid="e560d8d3-aabd-43e4-a1f7-af47a5465bbb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="245" width="534" height="82" backcolor="#FFFFFF" uuid="3facfc70-aa3b-41cb-aa88-1ad30a25043e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="327" width="534" height="14" backcolor="#A6A6A6" uuid="b94d8e57-d129-4037-b4ff-540259a42d1d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="341" width="534" height="53" backcolor="#FFFFFF" uuid="d7885d16-22f4-47cf-b9fe-e923c0a27904"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="10" width="386" height="14" forecolor="#FFFFFF" uuid="e9f70327-bd35-431c-9ddc-e73498b5a37a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[DATOS DEL CONTRATANTE
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="24" width="102" height="14" forecolor="#000000" uuid="3281f36b-61a1-482d-a3bd-8fea04864cad"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Denominación Social:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="346" y="24" width="50" height="14" backcolor="#FFFFFF" uuid="67396806-dfea-4f36-8ed1-0ad6639f4102"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="346" y="24" width="38" height="14" forecolor="#000000" uuid="0e5f4a94-38fe-445c-bead-4f8c2bed7f6b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[RUC:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="396" y="24" width="148" height="14" backcolor="#FFFFFF" uuid="e1d68dce-294e-4d9b-9414-5881a868daca"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="38" width="324" height="14" forecolor="#000000" uuid="dcb79af9-3a17-4763-adf2-4b6984c7056d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Dirección: Av. Paseo de la república Nro. 5895 Int. 1301
+]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="52" width="178" height="14" backcolor="#FFFFFF" uuid="1b073275-5bc0-40ad-b48b-7e6c23c38f0d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="396" y="24" width="107" height="14" forecolor="#000000" uuid="27b93074-2ac2-4b82-bc8d-4822bff58253"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[20369155360]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="117" y="24" width="176" height="14" forecolor="#000000" uuid="0970e39e-1440-4548-a35c-4591525e253a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS FINANCIERA S.A.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="52" width="164" height="14" forecolor="#000000" uuid="c11b6ed3-b936-4553-9da3-8f63ecca4405"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Distrito: Miraflores
+]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="188" y="52" width="178" height="14" backcolor="#FFFFFF" uuid="9ca3bc37-015b-450e-a3b9-7ea0aa836da0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="366" y="52" width="178" height="14" backcolor="#FFFFFF" uuid="b1c5468e-96dd-4524-8365-b6f44e7f3120"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="188" y="52" width="164" height="14" forecolor="#000000" uuid="9bc7165b-6b5d-4372-bf11-7cdc432d1280"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Provincia: Lima]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="52" width="164" height="14" forecolor="#000000" uuid="0a4757ca-6f86-47c2-a879-3a60341af6bc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Departamento: Lima]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="277" y="66" width="267" height="14" backcolor="#FFFFFF" uuid="2d8896a0-7742-4e9b-97d2-a7a2856b7db0"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="11" y="66" width="164" height="14" forecolor="#000000" uuid="d16ee6d0-ad45-4e8f-8f12-dfcf099e844c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Teléfono Fijo: (01) 619 4160]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="66" width="212" height="14" forecolor="#000000" uuid="55947d78-6634-46c4-bb72-5e681ab0fc8f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Página web: www.compartamos.com.pe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="80" width="386" height="14" forecolor="#FFFFFF" uuid="d8760131-5759-4b3a-9eee-cf4e567d9162"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[DATOS DEL ASEGURADO TITULAR]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="94" width="178" height="14" backcolor="#FFFFFF" uuid="2343a009-4063-49ee-99dd-0a6a0af728cb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="188" y="94" width="178" height="14" backcolor="#FFFFFF" uuid="c4b521c8-1653-4b59-aad5-b855b225a1fa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="366" y="94" width="178" height="14" backcolor="#FFFFFF" uuid="58234557-fe33-4972-bede-c2d98b00debf"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="94" width="63" height="14" forecolor="#000000" uuid="1860c371-6851-4597-8f63-abbdc0896de9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Nombres:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="94" width="89" height="14" forecolor="#000000" uuid="ec64e79d-6a54-4a15-8e1d-cbe35f83c187"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Apellido Paterno:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="94" width="88" height="14" forecolor="#000000" uuid="1b3581b7-8b9e-4ac0-80aa-d74154c17315"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Apellido Materno:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="77" y="108" width="67" height="14" backcolor="#FFFFFF" uuid="56b8b7c9-4d25-493e-8508-b72d773b4902"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="144" y="108" width="64" height="14" backcolor="#FFFFFF" uuid="664536cd-4155-4c62-981a-e65b2f5122d9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="477" y="108" width="67" height="14" backcolor="#FFFFFF" uuid="cc4dd8fa-03a2-4848-9484-89b0a72c977c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="410" y="108" width="67" height="14" backcolor="#FFFFFF" uuid="4647a5fb-83f3-4787-8988-af0c18839702"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="108" width="76" height="14" backcolor="#FFFFFF" uuid="95b9448e-d3ba-4290-9fb3-ddcad9d494c4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="271" y="108" width="70" height="14" backcolor="#FFFFFF" uuid="2656c039-93cc-40fd-b0a6-8034e0e4099a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="208" y="108" width="63" height="14" backcolor="#FFFFFF" uuid="f49203d9-eda8-4a19-b480-46f220163a27"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="11" y="108" width="63" height="14" forecolor="#000000" uuid="5d659cb5-975b-45e8-8b60-3ebee26d93e7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Tipo de Doc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="144" y="108" width="61" height="14" forecolor="#000000" uuid="d8e7819a-9dd7-4531-9920-3baae0a2e85b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[N° Doc.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="108" width="72" height="14" forecolor="#000000" uuid="fc833703-0f83-4d5b-ab55-9fbc804380e2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Fecha de Nac:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="108" width="63" height="14" forecolor="#000000" uuid="477af143-df6b-44b0-af60-215048f83319"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Sexo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="122" width="63" height="14" forecolor="#000000" uuid="5edaa601-7f07-41d0-85fd-e201dbd03ffc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Estado Civil:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="136" width="63" height="14" forecolor="#000000" uuid="280a4bc3-047d-4ab7-82c5-fc5099211857"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Dirección:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="150" width="63" height="14" forecolor="#000000" uuid="bb57a123-ca3a-4961-9c34-12b7a8985e52"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Provincia:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="164" width="63" height="14" forecolor="#000000" uuid="324d1d89-6356-4e3e-aaff-85a2a41ca36e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Telf. Celular:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="271" y="122" width="79" height="14" backcolor="#FFFFFF" uuid="21cc794e-6773-47c4-9a82-00569992f160"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="271" y="150" width="79" height="14" backcolor="#FFFFFF" uuid="db16d0df-bf25-40df-bef3-6dcfda6adfdf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="89" y="122" width="182" height="14" backcolor="#FFFFFF" uuid="d211b571-cd34-4ecb-87df-ff2c7af94422"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="346" y="122" width="198" height="14" backcolor="#FFFFFF" uuid="8f30802f-2017-40cf-9cfe-889be9c3843e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="89" y="136" width="455" height="14" backcolor="#FFFFFF" uuid="49923b8a-83f9-4b77-b311-f50e5a5db95a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="89" y="150" width="182" height="14" backcolor="#FFFFFF" uuid="5a25f3bd-4e60-43c0-bafb-6973a017228c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="346" y="150" width="198" height="14" backcolor="#FFFFFF" uuid="6fec72bf-e63b-467a-b060-707ed2c58d9a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="89" y="164" width="142" height="14" backcolor="#FFFFFF" uuid="e1413067-773a-4134-8ae1-e1fc10c9e722"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="229" y="164" width="105" height="14" backcolor="#FFFFFF" uuid="ce77be3d-c79b-4699-9e62-c9008237f91c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="334" y="164" width="210" height="14" backcolor="#FFFFFF" uuid="5d70683d-1739-4675-945f-ac159eb37a71"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="271" y="122" width="63" height="14" forecolor="#000000" uuid="58b5cc38-9eee-4aad-8d70-7a0343d87367"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Ocupación:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="150" width="75" height="14" forecolor="#000000" uuid="f9ba6a40-0e40-4b3c-94f3-07136065238d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Departamento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="164" width="104" height="14" forecolor="#000000" uuid="eb9d49a8-26a4-4fe8-b59b-b55b9fb50013"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Correo Electrónico:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="190" width="534" height="41" forecolor="#000000" uuid="bae1e38c-83ef-47ac-9e15-40267836295f"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Cancelación de la suma asegurada, entiéndase el Saldo Insoluto del préstamo suscrito con EL
+CONTRATANTE (saldo capital del préstamo a la fecha del siniestro) en caso se produzca alguno de los
+riesgos cubiertos.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="178" width="386" height="14" forecolor="#FFFFFF" uuid="46fe31e0-1b92-45a3-a92c-d6b30a78bbd6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[INTERES ASEGURADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="231" width="386" height="14" forecolor="#FFFFFF" uuid="1c108018-d4a9-45b1-8b3d-3cd4f368564d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[VIGENCIA DEL SEGURO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="326" width="386" height="14" forecolor="#FFFFFF" uuid="9d570175-2877-47fb-9f2a-a4799f1b83de"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[DATOS DEL BENEFICIARIO
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="245" width="534" height="81" forecolor="#000000" uuid="f4e0d990-74d1-4aa3-83b9-791424cdb6a2"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Se inicia desde que EL CONTRATANTE efectúe el desembolso del crédito a EL ASEGURADO. Asimismo, la
+cobertura se mantendrá vigente en tanto: (i) EL ASEGURADO realice el pago puntual y completo de las cuotas
+del crédito suscrito con EL CONTRATANTE, (ii) se encuentre vigente el crédito asegurado antes descrito, (iii)
+la póliza de desgravamen de Compartamos Financiera S.A. suscrita con LA ASEGURADORA se mantenga
+vigente; y, (iv) EL ASEGURADO se encuentre dentro de los rangos de edad establecidos en el presente
+certificado.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="340" width="534" height="54" forecolor="#000000" uuid="c9e4cbe7-67a5-485b-94aa-16bf39400200"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[El beneficiario de la cobertura del presente seguro es COMPARTAMOS FINANCIERA S.A. Siempre que se
+determine la procedencia de la cobertura de muerte o invalidez total permanente y definitiva del Asegurado, La
+Compañía pagará a COMPARTAMOS FINANCIERA S.A. hasta donde alcancen sus acreencias del monto
+máximo establecido del saldo de la deuda por Asegurado..]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="67" y="94" width="114" height="14" uuid="ef45d53d-d40e-42ab-9366-f2e19bf3ed86"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliNombre1} + "" + $F{cliNombre2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="274" y="94" width="114" height="14" uuid="4249de13-b9b4-43a7-bc31-74db7d452df9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliPaterno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="94" width="90" height="14" uuid="fb20021c-df33-4b76-9138-b4ab4b9fcad8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliMaterno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="77" y="108" width="67" height="14" uuid="e59524e0-d49b-43ed-bdec-40b76790c68c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliDocumentoTipoDescripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="208" y="108" width="59" height="14" uuid="6fa450bd-5166-4f22-af03-f759ab6557c1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliDocumentoNumero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="108" width="62" height="14" uuid="7d82d413-7057-45de-84d2-1a3347267b22"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliFechaNacimiento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="108" width="68" height="14" uuid="44197188-c93b-4272-866a-20b01a8fdc3a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliSexo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="122" width="114" height="14" uuid="e5164063-3dad-4015-97ca-11bf248eb42a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliEstadoCivil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="346" y="122" width="114" height="14" uuid="b213beb1-bbd6-4c63-a417-3c4d47e31f2e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliOcupacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="136" width="114" height="14" uuid="0f8938a3-c562-4376-9ee6-b6c1aa949c3e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliDireccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="150" width="114" height="14" uuid="42f157a9-8018-49a6-8e7c-4937f41de231"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliDepartamento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="91" y="150" width="114" height="14" uuid="eff04887-d33b-44a6-905d-f6ebc3b152c1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliProvincia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="91" y="164" width="114" height="14" uuid="acceae28-fb30-4eb1-8a61-ad6a837314b8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliCelular}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="164" width="169" height="14" uuid="685be3a0-9e16-4c25-aa10-c83f0efdabbd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliCorreo}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="270">
+			<subreport>
+				<reportElement x="0" y="0" width="536" height="270" uuid="8b9d5de5-a4cd-4024-9c4a-0acaac81e2dd"/>
+				<subreportParameter name="p_creditoIndividual">
+					<subreportParameterExpression><![CDATA[$F{creditoIndividual}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_ruta">
+					<subreportParameterExpression><![CDATA[$P{p_ruta}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new JREmptyDataSource()]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta} + "Poliza_suCabReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="757">
+			<rectangle>
+				<reportElement x="14" y="482" width="533" height="275" backcolor="#FFFFFF" uuid="c31eb8d5-75cb-4e32-98a6-15a1dacbb901"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="378" y="626" width="155" height="14" forecolor="#000000" uuid="29ef9e20-8811-4896-bd14-fdbee7f01b9c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[____________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="675" width="110" height="14" forecolor="#000000" uuid="a50e1652-8def-4f36-a318-e9e42fb0117e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[____________________________]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="249" y="139" width="298" height="14" backcolor="#FFFFFF" uuid="26b0972e-bd5b-44d5-adaa-92bd99de4626"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="13" y="167" width="236" height="14" backcolor="#FFFFFF" uuid="51b24ce0-67c6-468f-9e6b-725c0e8752a8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="13" y="153" width="236" height="14" backcolor="#FFFFFF" uuid="a5dec62f-8ab7-4da8-84b5-ed8ac5f786b9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="13" y="139" width="236" height="14" backcolor="#FFFFFF" uuid="3361c9f5-9143-45f7-bedb-86fd4ad42aed"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="13" y="16" width="236" height="14" backcolor="#FFFFFF" uuid="76dc53d1-e21c-4d85-a9e9-0e7dc9602969"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="249" y="30" width="298" height="95" backcolor="#FFFFFF" uuid="cd846295-3280-4143-a10a-b6001b07942e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="13" y="30" width="236" height="95" backcolor="#FFFFFF" uuid="12611f59-9b7c-44a0-b39d-3bbe197044c7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="13" y="278" width="534" height="14" backcolor="#A6A6A6" uuid="48382bc0-d985-4e32-84ab-6b970b26397e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="13" y="292" width="534" height="41" backcolor="#FFFFFF" uuid="b260115e-8882-4866-903b-4c3c48f30aa6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="413" y="360" width="134" height="14" backcolor="#FFFFFF" uuid="4dd34f85-be3d-48ef-a8e5-6d1fda51bed3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="296" y="360" width="131" height="14" backcolor="#FFFFFF" uuid="c6eb282e-e98c-4de6-99c5-c3ef4acf7cb2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="296" y="333" width="131" height="27" backcolor="#D9D9D9" uuid="3d10ff90-eda5-41b0-ac84-05fc5712367f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="13" y="333" width="283" height="27" backcolor="#D9D9D9" uuid="71eb6cbf-41f6-4603-8b10-636df0ccda48"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="13" y="428" width="533" height="54" backcolor="#FFFFFF" uuid="6f250a96-2ea7-4ede-9ce8-a8e51981fcf1"/>
+			</rectangle>
+			<image isUsingCache="true" isLazy="true" onErrorType="Blank">
+				<reportElement mode="Transparent" x="406" y="607" width="115" height="27" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="7fdcc190-0d1e-4ac2-83db-61b177970aac"/>
+				<imageExpression><![CDATA[$P{p_firma_asegurado}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="13" y="428" width="532" height="54" forecolor="#000000" uuid="dafff6c4-f536-436a-84a8-68762cffd779"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Se deja establecido que, si en cualquier momento la persona hubiera excedido los límites de edad
+establecidos, se dará por concluida la cobertura respectiva, quedando La Compañía obligada únicamente a
+reintegrar las primas pagadas luego de dichos límites, aun cuando dicha inexactitud se descubra después del
+fallecimiento o invalidez total permanente y definitiva del Asegurado. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="278" width="386" height="14" forecolor="#FFFFFF" uuid="1581e349-5e94-4c75-8bd5-18599a213b6f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[CONDICIONES DE AFILIACIÓN DEL SEGURO
+]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="181" width="236" height="28" backcolor="#FFFFFF" uuid="e1280cfb-17f4-4168-98b9-f4dec4ec80f2"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="303" y="675" width="124" height="14" forecolor="#000000" uuid="43914bc4-ae00-43bc-9703-1c85b8352ef1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[____________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="153" width="177" height="14" forecolor="#000000" uuid="a356adad-452d-4eb3-99bb-71502ffea6e0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Muerte Natural]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="165" y="689" width="105" height="14" forecolor="#000000" uuid="6f8fd640-220f-4033-95a5-aec960c493ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Fecha de Solicitud]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="296" y="333" width="131" height="14" forecolor="#000000" uuid="7378238e-0b0f-4465-8e29-46709ef50d85"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Límite de Ingreso ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="249" y="153" width="298" height="56" backcolor="#FFFFFF" uuid="48303fcf-4577-4f4a-bf19-96c563641fc3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="13" y="374" width="102" height="14" forecolor="#000000" uuid="6d67ec20-591e-4858-ae52-f8470fa4f863"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Entre 75 y 80 años:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="125" width="534" height="14" backcolor="#A6A6A6" uuid="6ed85de4-33ab-4705-ac44-d0198b328c84"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="13" y="333" width="283" height="14" forecolor="#000000" uuid="cf56fee9-04a7-49ac-88eb-e612a43d7648"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Sumas Aseguradas Máximas por Asegurado ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="139" width="295" height="14" forecolor="#000000" uuid="5e656f80-1f3d-4198-90b3-bbd14c4652f3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[SUMA ASEGURADA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="178" y="669" width="77" height="20" uuid="f4677f3a-7f34-48bc-81a8-d0b3f64f6636"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_fecha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="13" y="292" width="532" height="41" forecolor="#000000" uuid="5fdd2aaf-7f41-4363-bc18-a8f9b95de06e"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Podrán asegurarse bajo la presente Póliza, las personas naturales que sean incorporados como tal en la
+Póliza, que cumplan con los requisitos de asegurabilidad y cuya edad se encuentre dentro del rango siguiente
+edades:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="296" y="689" width="131" height="14" forecolor="#000000" uuid="8e9d6e1e-5757-4666-83c4-1baea6ab2f72"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Director Unidad Vida]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="30" width="295" height="95" forecolor="#000000" uuid="2d85809b-f9e1-430e-8c22-e26181882267"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Es la pérdida o disminución física o intelectual igual o superior
+al 70% de su capacidad de trabajo, reconocida por LA
+COMPAÑÍA según dictamen médico expedido por los Comités
+Médicos del Sistema Privado de Pensiones (COMAFP,
+COMEC) o mediante Certificado de Invalidez expedido por
+ESSALUD o Ministerio de Salud (Instituto Nacional de
+Rehabilitación - INR)
+]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="360" width="283" height="14" backcolor="#FFFFFF" uuid="cfb0f7c7-21e1-4c76-9662-4730d9a424e8"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="13" y="58" width="240" height="28" forecolor="#000000" uuid="ddf1d0b2-06b7-4be6-8726-a5014103cc6e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Invalidez Total Permanente y Definitiva por
+Accidente o Enfermedad
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="125" width="386" height="14" forecolor="#FFFFFF" uuid="3f4f403a-6545-4e2c-82ee-3502eb10e73a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[COBERTURA DEL SEGURO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="640" width="131" height="14" forecolor="#000000" uuid="13d15c52-02a7-4b0c-b412-82fff6f4ccdb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Firma del Asegurado]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="13" y="374" width="533" height="54" backcolor="#FFFFFF" uuid="5bb8f040-f963-4d12-a532-0c89978a51a4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="14" y="575" width="532" height="27" forecolor="#000000" uuid="f61cf1bd-a320-4f76-b0d9-c94537f45ea9"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Adicionalmente, MAPFRE Perú Vida pondrá, a su sola decisión, remitir los documentos antes indicados al
+correo electrónico indicado por el Asegurado Titular en el presente documento”.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="16" width="177" height="14" forecolor="#000000" uuid="cdb58c85-0096-447c-b6a5-6555604b62a2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Muerte Accidental]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="296" y="360" width="114" height="14" forecolor="#000000" uuid="b66a7bd2-a717-48d7-a838-b95e07fb141d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[74 años y 364 días ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="413" y="333" width="134" height="27" backcolor="#D9D9D9" uuid="27c5de87-69f8-44ab-af20-8a1677e256f4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="13" y="209" width="534" height="69" backcolor="#FFFFFF" uuid="641842d3-f541-47a0-afd4-2c7215580c54"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="249" y="16" width="298" height="14" backcolor="#FFFFFF" uuid="76558105-1439-4cb3-831f-32d2de71168c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="14" y="209" width="531" height="69" forecolor="#000000" uuid="d91b4439-93cd-4264-b715-4a5e607664f1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[                                                       Créditos hasta S/ 10,200 por ASEGURADO, hasta la cancelación total del
+crédito.
+Si un asegurado tiene dos o más líneas de crédito aseguradas bajo la misma póliza, la Compañía de Seguros
+en caso de siniestro indemnizable solo asumirá hasta la suma máxima de S/ 15,000 por los saldos insolutos
+de las líneas de crédito.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="209" width="177" height="14" forecolor="#000000" uuid="8a3f36a7-e129-4dd4-8629-b33fe4c54f23"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[SUMA ASEGURADA MAXIMA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="181" width="235" height="28" forecolor="#000000" uuid="49e4728b-20e1-40e0-bb78-2a2463560547"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Invalidez Total Permanente y Definitiva por
+Accidente o Enfermedad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="640" width="131" height="14" forecolor="#000000" uuid="2b3cfe4a-6934-46e8-a386-16f4e3a392a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Firma Testigo A Ruego]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="153" width="296" height="56" forecolor="#000000" uuid="7edd6840-aa30-42a3-b269-3a40ce67b5ec"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Saldo insoluto (saldo capital) del crédito a la fecha del
+fallecimiento por muerte natural o accidental del asegurado o
+al momento en que se produzca la invalidez total y permanente
+del ASEGURADO, ya sea por accidente o por enfermedad.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="139" width="177" height="14" forecolor="#000000" uuid="b838254d-1963-48dc-827a-467719806884"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[COBERTURAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="482" width="532" height="82" forecolor="#000000" uuid="b9eaa9c0-2e92-4386-8661-87d93bbb2b78"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Mediante la firma del presente documento, el Asegurado Titular declara conocer todos los documentos que
+conforman la Póliza de Seguro de Desgravamen N° 61100085 (Soles). No obstante, el Asegurado también
+declara haber tomado conocimiento los términos y condiciones que conforman el presente certificado de
+seguro, habiendo visualizado su contenido en la página web
+https://www.compartamos.com.pe/Peru/desgravamen-grupal . Finalmente, declara que después de
+acceder dicha página web, ha descargado e impreso los documentos que ha visualizado previamente.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="360" width="118" height="14" forecolor="#000000" uuid="fb41685e-dc82-476e-a3c8-8758a3130690"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[79 años y 364 días]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="167" width="177" height="14" forecolor="#000000" uuid="1cb4f50a-75b6-49cd-b228-29d9afc3806c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Muerte Accidental]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="374" width="532" height="54" forecolor="#000000" uuid="6cee6d74-67cd-44ab-9e82-35e2833e5662"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[                                   Siempre y cuando exista un vínculo comercial del Prestatario de por lo menos (1) año de
+antigüedad, Se podrá otorgar cobertura a los prestatarios que tengan entre 70 y 80 años cumplidos de edad
+que cancelen un crédito dentro de esa edad y vuelvan a tomar otro en forma inmediata o en los siguientes 12
+meses consecutivos posteriores; siendo el monto máximo de S/ 10,200.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="333" width="118" height="27" forecolor="#000000" uuid="8a9b535c-dc3c-491d-908f-d864a06451ad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Límite de
+Permanencia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="29" y="626" width="155" height="14" forecolor="#000000" uuid="1ace0443-1232-496d-b3ea-1c52fe35a77d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[____________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="16" width="295" height="14" forecolor="#000000" uuid="25903186-7453-4df0-b09d-23141e0e3448"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Cubre el fallecimiento del asegurado por causas accidentales.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="360" width="282" height="14" forecolor="#000000" uuid="32bbf075-9d4f-4a3c-b56b-7dd2a92d36a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="11" isBold="false" isUnderline="false"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Hasta S/ 10,200 ]]></text>
+			</staticText>
+			<image isUsingCache="true" isLazy="true" onErrorType="Blank">
+				<reportElement x="314" y="659" width="100" height="25" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="58633942-2b3d-4b28-a323-9213ac75e75c"/>
+				<imageExpression><![CDATA[$P{p_firma_director}]]></imageExpression>
+			</image>
+			<image isUsingCache="true" isLazy="true" onErrorType="Blank">
+				<reportElement x="64" y="609" width="100" height="25" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="439edeb7-fb8d-4ae2-950c-c66102195b6c"/>
+				<imageExpression><![CDATA[$P{p_firma_testigo}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

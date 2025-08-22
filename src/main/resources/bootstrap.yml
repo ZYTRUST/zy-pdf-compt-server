@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zy-pdf-compt-server
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      uri: http://localhost:8881
+      enabled: true

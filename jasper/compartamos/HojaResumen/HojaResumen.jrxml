@@ -1,0 +1,1344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Page13-20" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ac6ea52b-5ce7-4533-8101-91eda66c5e79">
+	<property name="ireport.zoom" value="1.3310000000000413"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="2989"/>
+	<style name="NotRotated" mode="Opaque" forecolor="#D8D8D8" hAlign="Center" vAlign="Middle" rotation="None" fontName="Arial Narrow" fontSize="15"/>
+	<style name="table">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dataset1" uuid="a194070d-f93b-48cf-9d28-e7a1a4614ea3"/>
+	<parameter name="JSON_INPUT_STREAM" class="java.io.InputStream" isForPrompting="false"/>
+	<parameter name="net.sf.jasperreports.json.source" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="net.sf.jasperreports.json.sources" class="java.util.List" isForPrompting="false"/>
+	<parameter name="net.sf.jasperreports.json.date.pattern" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="net.sf.jasperreports.json.number.pattern" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="JSON_LOCALE" class="java.util.Locale" isForPrompting="false"/>
+	<parameter name="net.sf.jasperreports.json.locale.code" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="JSON_TIME_ZONE" class="java.util.TimeZone" isForPrompting="false"/>
+	<parameter name="net.sf.jasperreports.json.timezone.id" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p_ruta" class="java.lang.String">
+		<defaultValueExpression><![CDATA[".\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="credGrupFechaVigencia" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="credGrupalVersion" class="java.lang.String"/>
+	<parameter name="grupoCodigo" class="java.math.BigDecimal">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="grupoNombre" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="grupoCiclo" class="java.math.BigDecimal">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="credGrupMonedaSimbolo" class="java.lang.String"/>
+	<parameter name="credGrupMontoDesembolso" class="java.math.BigDecimal">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="credGrupFechaDesembolso" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="credGrupFrecuenciaPagoCantidad" class="java.math.BigDecimal"/>
+	<parameter name="credGrupPlazoPrestamoCantidad" class="java.math.BigDecimal"/>
+	<parameter name="credGrupTEA360" class="java.math.BigDecimal"/>
+	<parameter name="credGrupTCEA" class="java.math.BigDecimal"/>
+	<parameter name="credGrupMontoAmpliacion" class="java.math.BigDecimal"/>
+	<parameter name="credGrupTasaMoraNominalAnual" class="java.math.BigDecimal"/>
+	<parameter name="listaCronogramaGrupal" class="java.util.List"/>
+	<parameter name="listaCreditoGasto" class="java.util.List"/>
+	<parameter name="listaCreditoComisiones" class="java.util.List"/>
+	<parameter name="credGrupFormaDesembolso" class="java.lang.Integer"/>
+	<parameter name="credGrupCuentaDesembolso" class="java.lang.String"/>
+	<parameter name="credGrupFormaContratacion" class="java.lang.Integer"/>
+	<parameter name="credGrupFormaEnvioDocContractual" class="java.lang.Integer"/>
+	<parameter name="credGrupFormaRemisionInformacion" class="java.lang.Integer"/>
+	<parameter name="credGrupFormaPagosAnticipadosParciales" class="java.lang.Integer"/>
+	<parameter name="credGrupTipoSeguro" class="java.lang.String"/>
+	<parameter name="credGrupMontoPrima" class="java.math.BigDecimal"/>
+	<parameter name="credGrupNombreCompaniaSeguro" class="java.lang.String"/>
+	<parameter name="credGrupRucCompania" class="java.lang.String"/>
+	<parameter name="credGrupNumPoliza" class="java.lang.String"/>
+	<parameter name="listaFirmantes" class="java.util.List"/>
+	<parameter name="listaGerentes" class="java.util.List"/>
+	<parameter name="listaGerentes2" class="java.util.List"/>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="20" splitType="Stretch">
+			<image onErrorType="Icon">
+				<reportElement x="405" y="0" width="150" height="20" uuid="da446ebe-7877-432e-b4ef-47f2734146e9"/>
+				<imageExpression><![CDATA[$P{p_ruta}+"LogoCompartamos.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="40" y="0" width="20" height="20" uuid="5ce27a86-bae8-451f-8f16-41ce1be7e5b4">
+					<property name="com.jaspersoft.studio.element.name" value="Nro. Página"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="40" height="20" uuid="5295fdb3-2af3-4cc5-9ca3-224e14236266"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Página ]]></text>
+			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement x="80" y="0" width="20" height="20" uuid="b71711a7-36dc-46c8-a4a5-89bbf8de57b9">
+					<property name="com.jaspersoft.studio.element.name" value="Total Páginas"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="60" y="0" width="20" height="20" uuid="df83b687-677e-4e9c-bf0e-9df71ae0e28f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[ de ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="467">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="6" y="0" width="546" height="25" uuid="10989aa5-7892-4e1d-bec3-e91b53c24d92"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" size="14" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Hoja Resumen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="25" width="546" height="27" uuid="2a4e4a21-a757-4acd-a03f-b694fde1214a"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[El presente documento es parte integrante del Contrato de Préstamo del producto denominado CRÉDITO SÚPER MUJER, suscrito con Compartamos Financiera S.A., en adelante COMPARTAMOS y en el que constan todas las condiciones del crédito otorgado a EL GRUPO.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="51" width="546" height="13" uuid="06ffb926-061c-432b-b3ec-212284db437d"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Rajdhani" isBold="true" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[<b>Agencia:</b>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="64" width="546" height="13" uuid="87c5ca0c-6983-4371-a9d1-a16b7ba88b1e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATOS DEL CRÉDITO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="363" width="546" height="91" uuid="5e66c980-db6f-495d-a470-a43d4f7b58cd"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[En los casos en que el Comité solicite ampliación del monto desembolsado, y esta suponga la incorporación de nuevas integrantes en el grupo, dicha ampliación no afectará las tasas de costo efectiva anual, ni las condiciones pactadas anteriormente de las demás integrantes del grupo.
+
+(*) Tasa de interés moratorio Nominal Anual se cobrará a EL CLIENTE en caso de incumplimiento de pago, se devengará de manera adicional a la tasa de interés compensatorio desde el día siguiente a la fecha de vencimiento de la obligación hasta el día de su pago total.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="454" width="546" height="13" uuid="64d74f7b-a419-4bbb-a182-0dfbfe3bfc6e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CRONOGRAMA DE PAGOS GRUPAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="155" width="273" height="26" uuid="cb695086-abc6-440c-900a-5e144b68e28a"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[4. Moneda y monto del Capital Prestado a EL GRUPO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="181" width="273" height="26" uuid="4486577d-754d-4c3f-a23d-1c8459560598"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[5. Fecha de Desembolso]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="259" width="273" height="26" uuid="7d6b60f8-decd-4c11-a732-3a2dc58bcbe3"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[8. Tasa de Interés Compensatorio Fija Efectiva Anual (TEA 360 días)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="337" width="273" height="26" uuid="c41a555e-f22d-44e6-94bc-e6f9501d8c2f"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[11. Tasa de Interés Moratorio Nominal Anual (*)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="285" width="273" height="26" uuid="6c12d7be-5eb3-4498-8803-c94c056ee07e"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[9. Tasa de Costo Efectiva Anual]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="77" width="273" height="26" uuid="6c2ce62c-d8aa-4645-9268-31f4e66f0a5d"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[1. Nombre del Grupo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="233" width="273" height="26" uuid="9d297a70-9bb2-4545-ba27-e429f8b126d8"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[7. Plazo del Préstamo Desembolsado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="311" width="273" height="26" uuid="ac7a5ebc-2638-4571-9358-f665ba4d2c0f"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[10. Ampliación de Monto Desembolsado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="129" width="273" height="26" uuid="361a06ee-6047-4514-b083-f032c23d6438"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[3. Ciclo del Grupo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="207" width="273" height="26" uuid="239c923b-21ff-4917-9096-fc90c734c04b"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[6. Frecuencia de Pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="103" width="273" height="26" uuid="1bb8294b-1931-4141-9082-a677c6aaaa97"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[2. Código Crédito]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="279" y="77" width="273" height="26" uuid="092350ce-4392-4fc2-a5ed-4296061dfc9f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{grupoNombre}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="279" y="103" width="273" height="26" uuid="22a40188-bc56-4595-a0ae-220e7273a2fb"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{grupoCodigo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="279" y="129" width="273" height="26" uuid="783ce85c-7597-4e6c-a651-448f22375e55"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{grupoCiclo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="279" y="155" width="273" height="26" uuid="cabcdb0c-f181-478d-b5bf-dc33dca6b01e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{credGrupMonedaSimbolo}+" "+$P{credGrupMontoDesembolso}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="279" y="181" width="273" height="26" uuid="ee96e414-7baa-4292-b62e-d81e2dc15d00"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{credGrupFechaDesembolso}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="279" y="207" width="273" height="26" uuid="d21b4634-5c17-4cac-8fd7-61405958292e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{credGrupFrecuenciaPagoCantidad} + " dias"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="279" y="233" width="273" height="26" uuid="14636c43-db0d-4d19-b415-7201c78f6c1a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{credGrupPlazoPrestamoCantidad} + " cuotas"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="279" y="259" width="273" height="26" uuid="7bfc9d9d-9a19-457a-87ad-9aa4db72d2bf"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{credGrupTEA360}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="279" y="285" width="273" height="26" uuid="f5e2b9d8-b644-4f1a-9f66-f3ca9ef02b78"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{credGrupTCEA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="279" y="311" width="273" height="26" uuid="0778236a-1f08-4e6f-b127-d88a147dd862"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{credGrupMontoAmpliacion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="279" y="337" width="273" height="26" uuid="b6755949-6c79-4982-b294-04388409476c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{credGrupTasaMoraNominalAnual}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="86">
+			<staticText>
+				<reportElement x="6" y="13" width="546" height="13" uuid="7fbba738-7cdc-479a-8081-135bf35ebed9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Rajdhani" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Plan de Pagos]]></text>
+			</staticText>
+			<subreport isUsingCache="false">
+				<reportElement style="table_TD" mode="Opaque" x="6" y="26" width="546" height="60" uuid="8134cb69-3c44-4693-a35f-7738682666ed"/>
+				<dataSourceExpression><![CDATA[$P{listaCronogramaGrupal} ==null|| $P{listaCronogramaGrupal}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{listaCronogramaGrupal})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta}+"PlanPagos.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="101">
+			<staticText>
+				<reportElement x="6" y="5" width="546" height="26" uuid="52d13843-5e47-4541-95e2-26faf75ec7b7"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[11. COMPARTAMOS y EL GRUPO acuerdan como GASTOS los siguientes conceptos:]]></text>
+			</staticText>
+			<subreport isUsingCache="false">
+				<reportElement style="table_TD" mode="Opaque" x="6" y="31" width="546" height="70" uuid="53c143c3-8012-4cd7-be22-9d107848fa75"/>
+				<dataSourceExpression><![CDATA[$P{listaCreditoGasto} ==null|| $P{listaCreditoGasto}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{listaCreditoGasto})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta}+"PlanGastos.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="104">
+			<staticText>
+				<reportElement x="6" y="8" width="546" height="26" uuid="f2c6bd5a-5639-4986-b8ec-b73fecdc1334"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[12. COMPARTAMOS y EL GRUPO acuerdan como COMISIONES los siguientes conceptos:]]></text>
+			</staticText>
+			<subreport isUsingCache="false">
+				<reportElement style="table_TD" mode="Opaque" x="6" y="34" width="546" height="70" uuid="15b3cd26-7289-43d3-85b6-3db3178f3929"/>
+				<dataSourceExpression><![CDATA[$P{listaCreditoComisiones} ==null|| $P{listaCreditoComisiones}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{listaCreditoComisiones})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta}+"PlanComisiones.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="663">
+			<rectangle>
+				<reportElement x="19" y="281" width="13" height="13" uuid="00833ae7-c520-49e0-ae44-33d495ef0322"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="6" y="242" width="546" height="26" uuid="816ed4ae-1c75-4024-b4ba-98ed27403f7e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[17. Formas de Desembolso
+EL GRUPO a continuación marcara con una \"X\" el canal por el cual desea recibir EL PRESTAMO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="281" width="507" height="13" uuid="2610f4b1-0c8c-4c7f-94ea-2fea4a658a10"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Orden de pago.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="19" y="301" width="13" height="13" uuid="bd939d5d-5cc0-4ce5-b35f-2b830fbe8b17"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="40" y="300" width="507" height="13" uuid="029ac463-bf58-407e-9d6c-6f55587b0b7d"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Cheque girado a la orden de cada integrante.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="19" y="320" width="13" height="13" uuid="b1d8fc31-9362-46aa-899f-e467880c2a2b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="19" y="341" width="13" height="13" uuid="93ca1ca9-a1ef-49cf-bef1-2c380f91aea8"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="40" y="340" width="507" height="13" uuid="14dbe7ec-2d7b-4222-b0e8-6281e761bb2a"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Abono a través de la cuenta de Dinero electrónico de cada integrante.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="281" width="13" height="13" uuid="4acb9448-1d02-4cab-b8e3-40f498d1e893">
+					<printWhenExpression><![CDATA[$P{credGrupFormaDesembolso} == 1]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="320" width="13" height="13" uuid="9e20e328-f2e3-417a-8eed-5ee448f7e919">
+					<printWhenExpression><![CDATA[$P{credGrupFormaDesembolso} == 3]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="301" width="13" height="13" uuid="090fea8d-ecb3-4ad3-899e-8ff40002a645">
+					<printWhenExpression><![CDATA[$P{credGrupFormaDesembolso} == 2]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="341" width="13" height="13" uuid="f48ffd39-d277-477c-9dfe-b73728e70f38">
+					<printWhenExpression><![CDATA[$P{credGrupFormaDesembolso} == 4]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="359" width="546" height="13" uuid="fe609f24-d193-4ead-af6c-aa876f8716f8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[18. Formas de Contratación:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="385" width="169" height="13" uuid="fb245683-3ed8-416e-9940-efb1f2543209"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Contratación presencial o Escrita.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="19" y="385" width="13" height="13" uuid="8252f202-94a5-4a0e-958f-00b8f0005c58"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="19" y="385" width="13" height="13" uuid="dbc6679c-e8f3-490f-a600-53dede331b93">
+					<printWhenExpression><![CDATA[$P{credGrupFormaContratacion}==1]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="385" width="286" height="13" uuid="b57d4737-ef66-42ea-b869-a3e8cf5e6f70"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Contratación no presencial o Mecanismos no escritos]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="240" y="385" width="13" height="13" uuid="42c772ab-84c8-45ee-88ba-c93cd0f24698"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="240" y="385" width="13" height="13" uuid="39be9731-e0a5-466c-a3ad-c3bdd49c6103">
+					<printWhenExpression><![CDATA[$P{credGrupFormaContratacion}==2]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="580" width="13" height="13" uuid="efaaf3af-8b3a-4205-8e6e-c8c17ca2a704"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="645" width="13" height="13" uuid="8bf6ecf0-5da3-48ae-aaad-6357a8469b59"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="632" width="13" height="13" uuid="38d93108-e7f0-4bd4-a614-8c2230060fa2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="567" width="13" height="13" uuid="7e15fef8-9a98-4880-9453-7d9432002743"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="593" width="13" height="13" uuid="7d68ffd4-243f-478e-83fd-de716cd9b90d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="606" width="13" height="13" uuid="4b46d37f-7201-4bba-898a-42a4e14bd8ae"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="450" width="286" height="13" uuid="f489d550-872f-41a6-a0ab-a016fe26bc06"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Envío correo electrónico]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="19" y="450" width="13" height="13" uuid="a91805b9-aae1-45cb-894c-24ead178271c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="240" y="450" width="13" height="13" uuid="4fc21c9c-cfb6-48a3-bebd-aae073541cab"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="19" y="450" width="13" height="13" uuid="dbeeb395-2167-4c5b-bf9d-f7138b5005c0">
+					<printWhenExpression><![CDATA[$P{credGrupFormaEnvioDocContractual}==1]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="424" width="546" height="13" uuid="a5055b8c-53e1-4439-a3e8-7909006a39d1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[19. *Elección del envío de los documentos contractuales]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="450" width="169" height="13" uuid="3fc7fcf4-2956-4bef-b2e6-ff5608d30fc2"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Agencias de COMPARTAMOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="450" width="13" height="13" uuid="cc23f716-635a-472b-ad77-5bf8da877189">
+					<printWhenExpression><![CDATA[$P{credGrupFormaEnvioDocContractual}==2]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="476" width="533" height="26" uuid="9470e282-a5c2-4c7f-a07e-4a316c70f118"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[* En caso EL CLIENTE haya elegido el "Envío al correo electrónico", este será enviado en un plazo máximo de quince (15) días de celebrado el presente contrato, caso contrario será entregado de inmediato.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="515" width="546" height="13" uuid="c8c860ac-347f-4ff3-99aa-614bf44496f0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[20. Constancia de elección de información periódica - ESTADOS DE CUENTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="541" width="546" height="13" uuid="47446c68-473c-400f-a1af-f0ee0e2905b5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONSTANCIA DE ELECCIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="554" width="546" height="13" uuid="fd61f37f-02de-4858-adf7-f55ee3826ffe"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="10"/>
+				</textElement>
+				<text><![CDATA[Remisión de Información, EL GRUPO eligió:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="567" width="533" height="13" uuid="0cb3b0a4-eba2-4565-be7c-25eec9ef1ad8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Rajdhani" isBold="false"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[<b>NO</b>, desea recibir remisión de información]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="580" width="533" height="13" uuid="c9c29c2b-3ade-41d9-b812-e0a0b5a1c818"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Rajdhani"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[<b>SI</b>, desea recibir remisión de información por]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="606" width="533" height="13" uuid="09230577-8eb6-484a-b852-19cc410e2d2a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Rajdhani"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[<i>Medios Electrónicos</i>, la información será enviada al correo de una de las integrantes del comité del GRUPO de forma]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="593" width="533" height="13" uuid="3029718e-6a06-4347-8189-5f988ce10b2f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Rajdhani"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[<i>Medios físicos</i>, aceptando se me traslade como GRUPO el costo de envío de la información.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="645" width="533" height="13" uuid="52d3cf9b-74e2-473d-acee-bcf7576ad94b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[Reducción de Número de cuotas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="632" width="533" height="13" uuid="6b8564fc-c053-419f-8971-da31a7c24fc6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[Reducción de Monto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="619" width="546" height="13" uuid="4454423f-7250-4526-b518-def07ce531f8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="10"/>
+				</textElement>
+				<text><![CDATA[Pagos Anticipados Parciales, EL GRUPO eligió:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="567" width="13" height="13" uuid="233d5a5d-d19a-40b6-8853-e07bd474e5e5">
+					<printWhenExpression><![CDATA[$P{credGrupFormaRemisionInformacion}==1]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="580" width="13" height="13" uuid="f8f22819-e3c0-4e69-8c4e-4efdcb792d96">
+					<printWhenExpression><![CDATA[$P{credGrupFormaRemisionInformacion}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="593" width="13" height="13" uuid="10d391c8-efe7-48a4-95d0-b9ee8236bb21">
+					<printWhenExpression><![CDATA[$P{credGrupFormaRemisionInformacion}==3]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="606" width="13" height="13" uuid="ea9fe960-9444-411e-aa47-d2575c3aaa48">
+					<printWhenExpression><![CDATA[$P{credGrupFormaRemisionInformacion}==4]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="645" width="13" height="13" uuid="234b68df-6ec2-4258-8087-7c5e92c295c8">
+					<printWhenExpression><![CDATA[$P{credGrupFormaPagosAnticipadosParciales}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="632" width="13" height="13" uuid="e9a12d3e-464c-48c2-a7f7-acea0cb87492">
+					<printWhenExpression><![CDATA[$P{credGrupFormaPagosAnticipadosParciales}==1]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="8" width="546" height="221" uuid="007254bc-d231-4df6-877f-aa588b2e087e"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[13. La tasa de interés compensatorio efectiva anual, es calculada sobre 360 días y se capitalizará diariamente. La aplicación de intereses compensatorios en periodo de atraso conforme a los regulado en la presente clausula, no supone la aplicación de tasas diferenciadas y procede conforme a la Resolución SBS N°0288-2019 y Oficio Múltiple N°02982-2019.
+
+14. EL GRUPO tiene derecho a efectuar pagos anticipados de las cuotas o saldos, en forma total o parcial, con la consiguiente reducción de los intereses al día de pago, deduciendo asimismo las comisiones y gastos derivados de las cláusulas contractuales pactadas entre las partes, sin que les sea aplicables comisiones, gastos o penalidades de algún tipo o cobros de naturaleza o efecto similar.
+Para la realización del pago anticipado sólo se considerará la cuota de EL GRUPO, y no el monto proporcional que le corresponde a cada integrante de EL GRUPO.
+
+15. Si EL GRUPO incumpliera el pago según las condiciones pactadas, se procederá a realizar el reporte correspondiente a la Central de Riesgos con la calificación que corresponda, de conformidad con el Reglamento para la Evaluación y Clasificación del Deudor y la Exigencia de Provisiones vigente.
+
+16. Si producto de dolo o culpa debidamente acreditados, se induce a error al usuario y como consecuencia de ello éste realiza un pago en exceso, dicho monto es recuperable y devengará hasta su devolución el máximo de la suma por concepto de intereses compensatorio y penalidades que se hayan pactado para la operación crediticia o en su defecto, el interés legal.]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="197" y="320" width="350" height="13" uuid="390ee5d3-df3b-4f59-bad9-a55a0560f049"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{credGrupCuentaDesembolso}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="320" width="157" height="13" uuid="57541e35-87ea-46ac-a2da-26c495005d02"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Abono en cuenta en Compartamos Nr. ]]></text>
+			</staticText>
+		</band>
+		<band height="703">
+			<staticText>
+				<reportElement x="19" y="320" width="156" height="26" uuid="3b7bf9d1-5aef-426d-b71f-50751da104d7"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[Tipo de seguro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="463" width="156" height="26" uuid="e8807922-091d-4b85-a0a6-903e8d064c5d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[Nº de la póliza]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="437" width="156" height="26" uuid="8fd17b6a-56dd-42fc-8ee8-21764c2ba440"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[Nombre de la Compañia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="346" width="156" height="91" uuid="64cfa4e1-0b94-43e8-bd6d-ca9c327804cb"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[Monto de la prima]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="175" y="463" width="377" height="26" uuid="ed8071f8-83be-4c80-b45f-036cd104a915"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nr. "+$P{credGrupNumPoliza}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="175" y="320" width="377" height="26" uuid="4f8ec293-57d1-489e-98f2-7251e097803a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{credGrupTipoSeguro}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="175" y="346" width="377" height="26" uuid="312a29c6-14a4-48ac-a4e5-efd6103b7029"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+					<font fontName="Rajdhani"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[<b>MONTO DE LA PRIMA</b> = Monto del saldo insoluto x la Tasa del SEGURO DE DESGRAVAMEN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="385" width="377" height="52" uuid="26014cb4-25f4-4cac-85d4-5283b95fe11b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
+					<font fontName="Rajdhani"/>
+					<paragraph leftIndent="5" rightIndent="5"/>
+				</textElement>
+				<text><![CDATA[Si en el momento de imprimir el presente documento la prima es asumida por Compartamos Financiera el monto de la prima será '0', caso contrario, el monto se verá reflejado en el cronograma de pagos, el mismo que forma parte integrante del presente documento.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="372" width="130" height="13" uuid="244cfc74-53ec-4a82-a681-fd05e52f1345"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[MONTO DE LA PRIMA MINIMA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="175" y="437" width="377" height="26" uuid="4cb207b2-0027-4b4b-be6d-2cce7d694809"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{credGrupNombreCompaniaSeguro} + " RUC: " + $P{credGrupRucCompania}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="305" y="372" width="247" height="13" uuid="4f1fb56d-b455-4d83-a256-0f3dc81dcae7"/>
+				<box>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA["S/. " + $P{credGrupMontoPrima}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="489" width="156" height="195" uuid="c8f732d5-2c17-4f8e-a3b0-0438668d0eb7"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Rajdhani" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[Riesgos objeto de cobertura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="489" width="377" height="195" uuid="a00e2bff-eb28-4aaf-a360-e494e4afbc9c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
+					<font fontName="Rajdhani" isBold="false"/>
+					<paragraph lineSpacing="Single" leftIndent="5" tabStopWidth="40"/>
+				</textElement>
+				<text><![CDATA[<b>Muerte natural:</b> Cubre el fallecimiento del asegurado por causas naturales.<br></br><br></br>
+<b>Muerte Accidental:</b> Cubre el fallecimiento del asegurado por causas accidentales.<br></br><br></br>
+<b> Invalidez total y permanente por accidente o enfermedad:</b><br></br>
+Es la pérdida o disminución física o intelectual igual o superior al 70% de su capacidad de trabajo, reconocida por LA COMPAÑÍA según dictamen médico expedido por los Comités Médicos del Sistema Privado de Pensiones (COMAFP, COMEC) o mediante Certificado de Invalidez expedido por ESSALUD o Ministerio de Salud (Instituto Nacional de Rehabilitación - INR).<br></br><br></br>
+<b>SUMAS ASEGURADAS:</b><br></br>
+Saldo insoluto (saldo capital) del crédito a la fecha del fallecimiento por muerte natural o accidental del asegurado o al momento en que se produzca la invalidez total y permanente del ASEGURADO, ya sea por accidente o por enfermedad.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="21" width="533" height="286" uuid="2fc38f1c-45dd-4abc-9d7f-924cf296255a"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle" markup="none">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[El desembolso del crédito según el giro del negocio y/o forma de contratación, podría estar supeditado a la contratación de un Seguro de Desgravamen que COMPARTAMOS tenga establecido, para lo cual EL(LOS) CLIENTE(S) se obligarán a contratar y mantener vigente y de ser el caso endosar la póliza correspondiente a favor de COMPARTAMOS.
+En caso se requiera la contratación de un Seguro de Desgravamen, EL (LOS) CLIENTE(S) podrán optar por: 1. Contratar el seguro que ofrece COMPARTAMOS. Al respecto EL (LOS) CLIENTE(S) declara haber recibido información sobre los términos y condiciones de la póliza que adquiere. El certificado de la póliza o póliza del seguro contratado, con el detalle de la cobertura, exclusiones y limitaciones de dicho seguro, a las cuales expresamente se sujeta, es entregado a EL(LOS) CLIENTE(S) declarando tener pleno conocimiento de los riesgos cubiertos, monto de la prima, las exclusiones del seguro y el plazo para efectuar reclamos. La póliza de seguro o certificado será entregado a EL (LOS) CLIENTE(S) al momento de los desembolsos del crédito o 2. Contratar un seguro con la empresa de su elección que brinde cobertura similar o mayor al seguro ofrecido por COMPARTAMOS y por plazos iguales o mayores, en este caso, EL (LOS) CLIENTE(S), deberá endosar la póliza a favor de COMPARTAMOS, hasta por el monto del saldo adeudado, en un plazo no mayor a cinco (05) días hábiles de suscrito el contrato. En el endoso deberá constar la declaración de la compañía de seguros en el sentido que, COMPARTAMOS es el único beneficiario de la indemnización hasta por el monto pendiente del pago total del crédito otorgado en virtud del presente contrato. La información sobre las condiciones mínimas que debe tener el seguro contratado por EL(LOS) CLIENTE(S) se encuentra en la página web de COMPARTAMOS ( www.compartamos.com.pe ).
+Los seguros deben permanecer vigentes durante todo el plazo del contrato incluido el plazo de sus refinanciaciones; debiendo ser renovados por EL(LOS) CLIENTE(S) las veces que sea necesario.
+En caso el Seguro de Desgravamen y elegido por EL(LOS) CLIENTE(S) sea el ofrecido por COMPARTAMOS, EL(LOS) CLIENTE(S) autoriza(n) en forma irrevocable a COMPARTAMOS a cargar el importe de las primas correspondientes a estos seguros en el(los) monto(s) de las cuotas del(los) créditos) que se otorgue(n) y/o cualquiera de las que EL(LOS) CLIENTE(S) pudiera tener en COMPARTAMOS. Todos los alcances de esta cláusula serán aplicables también en caso de renovaciones y ampliaciones de la póliza o certificado del seguro.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="8" width="546" height="13" uuid="43c681cd-6b8d-44e3-a5d6-476a4638ca1f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[21. Seguros]]></text>
+			</staticText>
+		</band>
+		<band height="466">
+			<subreport isUsingCache="false">
+				<reportElement style="table_TD" mode="Opaque" x="41" y="183" width="156" height="104" uuid="4393be1a-ba58-43d6-b7ec-27e62d799bf8"/>
+				<subreportParameter name="firmanteNumber">
+					<subreportParameterExpression><![CDATA[1]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{listaFirmantes} ==null|| $P{listaFirmantes}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{listaFirmantes})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta}+"Firmantes.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport isUsingCache="false">
+				<reportElement style="table_TD" mode="Opaque" x="353" y="183" width="156" height="104" uuid="1fe32347-bc92-485c-a5e2-82d66ea54491"/>
+				<subreportParameter name="firmanteNumber">
+					<subreportParameterExpression><![CDATA[2]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{listaFirmantes} ==null|| $P{listaFirmantes}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{listaFirmantes})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta}+"Firmantes.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport isUsingCache="false">
+				<reportElement style="table_TD" mode="Opaque" x="197" y="352" width="156" height="104" uuid="fdabe0cf-ea74-46c2-997d-dc1ca0d6e9b7"/>
+				<subreportParameter name="firmanteNumber">
+					<subreportParameterExpression><![CDATA[3]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{listaFirmantes} ==null|| $P{listaFirmantes}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{listaFirmantes})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta}+"Firmantes.jasper"]]></subreportExpression>
+			</subreport>
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="172" uuid="089747cb-6d96-4e13-8160-967ac9113910"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+		<band height="90">
+			<subreport isUsingCache="false">
+				<reportElement style="table_TD" mode="Opaque" x="40" y="0" width="469" height="88" uuid="8a915f27-f908-4f58-8bae-1577372eaca3"/>
+				<subreportParameter name="firmanteNumber">
+					<subreportParameterExpression><![CDATA[1]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{listaGerentes} ==null|| $P{listaGerentes}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{listaGerentes})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta}+"Gerentes.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="385" y="0" width="170" height="21" uuid="35c343ec-14e6-455b-b0e9-a80ea4a734e6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Fecha de vigencia: "+$P{credGrupFechaVigencia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="0" width="100" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="559f5f85-fcce-4675-bb24-e7dc068bccb9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Rajdhani" size="10" isBold="false" isItalic="true" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Version " + $P{credGrupalVersion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

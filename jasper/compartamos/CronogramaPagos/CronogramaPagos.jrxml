@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Plantilla" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="832" leftMargin="0" rightMargin="10" topMargin="0" bottomMargin="0" uuid="6858b344-3d5c-4c10-9274-a01177fbc8de">
+	<property name="ireport.zoom" value="1.996500000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="NotRotated" mode="Opaque" forecolor="#D8D8D8" hAlign="Center" vAlign="Middle" rotation="None" fontName="Arial Narrow" fontSize="15"/>
+	<style name="table">
+		<box>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="l_listaCliente" class="java.util.List"/>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<parameter name="grupoCodigo" class="java.math.BigDecimal"/>
+	<pageHeader>
+		<band height="78">
+			<textField pattern="dd/MM/yy">
+				<reportElement x="698" y="36" width="124" height="19" uuid="29be086d-478b-4d6c-a6ba-e5adcd7bf187"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="768" y="16" width="54" height="20" uuid="676cb6e3-778b-41d7-a77b-69ee80d6b9a8"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="698" y="16" width="70" height="20" uuid="4266ec92-c6a6-48d8-9bea-987f76f59d76"/>
+				<textElement>
+					<font size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Pagina:]]></text>
+			</staticText>
+			<textField pattern="HH:mm:ss">
+				<reportElement x="698" y="55" width="124" height="20" uuid="aaa8ff38-7dcb-4ccb-bade-14f7688f47f6"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+					<paragraph lineSpacing="Proportional"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="69">
+			<staticText>
+				<reportElement x="10" y="40" width="61" height="20" uuid="38f0b250-92d5-40f1-bdea-5c2ee71bb482"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="10" width="832" height="20" uuid="d29cb152-2db2-4375-b61d-34d6bb14cace"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CRONOGRAMA DE PAGOS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="85" y="40" width="100" height="20" uuid="b0cfa121-71be-4eb8-969f-3fdaa7232bea"/>
+				<textFieldExpression><![CDATA[$P{grupoCodigo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="169">
+			<subreport isUsingCache="true">
+				<reportElement style="table_TD" mode="Opaque" x="0" y="0" width="832" height="156" uuid="80d4ad37-2e66-4cd1-a47f-4cbe07fc1fbe"/>
+				<subreportParameter name="p_ruta">
+					<subreportParameterExpression><![CDATA[$P{p_ruta}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{l_listaCliente} ==null|| $P{l_listaCliente}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{l_listaCliente})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta}+"CronogramaPagos_suReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

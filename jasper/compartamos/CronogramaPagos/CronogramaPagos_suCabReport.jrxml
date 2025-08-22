@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CondicionesEspecificas_subReport" pageWidth="802" pageHeight="555" orientation="Landscape" columnWidth="802" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="1f4f64cf-bd98-404e-a06b-ff343b571081">
+	<property name="ireport.zoom" value="2.3579476910000037"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<field name="segOptativoCertificado" class="java.math.BigDecimal"/>
+	<field name="segOptativoTipoProducto" class="java.lang.String"/>
+	<field name="segOptativoTipoPlan" class="java.lang.String"/>
+	<field name="segOptativoTiempoCoberturaCantidad" class="java.math.BigDecimal"/>
+	<field name="segOptativoTiempoCoberturaUnidad" class="java.lang.String"/>
+	<field name="listaCronogramaSegOptativo" class="java.util.List"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="6" splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="229" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="84" width="574" height="125" uuid="627b684e-301d-4e88-9f3d-40579b99650d"/>
+				<subreportParameter name="p_ruta">
+					<subreportParameterExpression><![CDATA[$P{p_ruta}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$F{listaCronogramaSegOptativo} ==null|| $F{listaCronogramaSegOptativo}.isEmpty() ?    new JREmptyDataSource() : new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaCronogramaSegOptativo})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta} + "CronogramaPagos_suCabReport3.jasper"]]></subreportExpression>
+			</subreport>
+			<textField>
+				<reportElement x="163" y="42" width="411" height="20" uuid="9d0d58ac-289d-4dbf-baf3-5e5fa89f4ba2"/>
+				<textFieldExpression><![CDATA[$F{segOptativoTipoPlan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="2" width="411" height="20" uuid="62e06cec-15a5-47a7-9701-53f7e7c74803"/>
+				<textFieldExpression><![CDATA[$F{segOptativoCertificado}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="2" width="128" height="20" uuid="cd17c981-2afa-4b12-9a69-85be92c0cd39"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CÓDIGO DEL SEGURO:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="194" y="62" width="208" height="20" uuid="40bbe207-1c6b-4ce6-9a0d-d16f4eafd727"/>
+				<textFieldExpression><![CDATA[$F{segOptativoTiempoCoberturaUnidad}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="22" width="128" height="20" uuid="8665b28d-cc94-41b9-9c39-7272b4948822"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TIPO DE PRODUCTO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="62" width="128" height="20" uuid="0f074330-8cdc-4684-8a7a-a87fa3ca2910"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TIEMPO DE COBERTURA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="42" width="128" height="20" uuid="cae4c9bb-602d-4314-9b16-0d043d8976e0"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TIPO DE PLAN:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="163" y="22" width="411" height="20" uuid="46ffe951-bd7d-4f21-ace6-32e7ce10d7cc"/>
+				<textFieldExpression><![CDATA[$F{segOptativoTipoProducto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="62" width="31" height="20" uuid="cc1ec6f9-8cca-403d-b470-8abe65cf2437"/>
+				<textFieldExpression><![CDATA[$F{segOptativoTiempoCoberturaCantidad}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

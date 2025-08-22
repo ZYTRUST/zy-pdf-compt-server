@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CondicionesEspecificas" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3d05016e-fcb8-4a3a-9b45-7fa28ee6727d">
+	<property name="ireport.zoom" value="1.4641000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<parameter name="p_grupoNombre" class="java.lang.String"/>
+	<parameter name="p_codigoOperacion" class="java.math.BigDecimal"/>
+	<parameter name="l_Condicion" class="java.util.List"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\agallegos\\JaspersoftWorkspace\\MyJasperReports\\CondicionesEspecificas\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_logo_movistar" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="cliPaterno" class="java.lang.String"/>
+	<field name="cliMaterno" class="java.lang.String"/>
+	<field name="cliNombre1" class="java.lang.String"/>
+	<field name="cliNombre2" class="java.lang.String"/>
+	<field name="cliCodigo" class="java.math.BigDecimal"/>
+	<field name="creditoIndividual" class="java.lang.Object"/>
+	<detail>
+		<band height="392" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="47" width="555" height="20" uuid="43ac2b2d-6551-43b1-9e75-908ca8b63d43"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Condiciones Específicas para cada integrante de EL GRUPO]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="67" width="555" height="314" uuid="3aeade1c-bfda-4296-b1c7-2433dbb10e53"/>
+				<subreportParameter name="p_creditoIndividual">
+					<subreportParameterExpression><![CDATA[$F{creditoIndividual}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_cliCodigo">
+					<subreportParameterExpression><![CDATA[$F{cliCodigo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_cliNombre2">
+					<subreportParameterExpression><![CDATA[$F{cliNombre2}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_cliPaterno">
+					<subreportParameterExpression><![CDATA[$F{cliPaterno}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_cliNombre1">
+					<subreportParameterExpression><![CDATA[$F{cliNombre1}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_grupoNombre">
+					<subreportParameterExpression><![CDATA[$P{p_grupoNombre}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_cliMaterno">
+					<subreportParameterExpression><![CDATA[$F{cliMaterno}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_codigoOperacion">
+					<subreportParameterExpression><![CDATA[$P{p_codigoOperacion}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_ruta">
+					<subreportParameterExpression><![CDATA[$P{p_ruta}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new JREmptyDataSource()]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{p_ruta} + "CondicionesEspecificas_subCabReport.jasper"]]></subreportExpression>
+			</subreport>
+			<image>
+				<reportElement x="355" y="16" width="200" height="31" uuid="3ad3dec4-fc66-487e-b3f1-ebdddd765142"/>
+				<imageExpression><![CDATA[$P{p_logo_movistar}]]></imageExpression>
+			</image>
+		</band>
+		<band height="248"/>
+		<band height="87">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="40" uuid="0eb7160a-5d4e-4602-aa70-d98d9558c91b"/>
+				<textElement textAlignment="Left">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[En caso haya comprado el seguro, autorizo se descuente del monto a desembolsar el pago de la prima del seguro cuyo importe se encuentra indicado en el Plan de Pagos del Seguro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="555" height="40" uuid="21976382-06c6-41ed-a614-1b9fb6a1f5f9"/>
+				<textElement textAlignment="Left">
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[(*) Tasa de interés moratorio Nominal Anual se cobrará a EL CLIENTE en caso de incumplimiento de pago, se devengará de manera adicional a la tasa de interés compensatorio desde el día siguiente a la fecha de vencimiento de la obligación hasta el día de su pago total.]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

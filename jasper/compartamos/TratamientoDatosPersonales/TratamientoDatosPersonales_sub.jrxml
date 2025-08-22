@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TratamientoDatosPersonales" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="69275c6c-4386-4d44-bb21-f3ee39b09865">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.zoom" value="1.771561000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1873"/>
+	<parameter name="p_clienteAutorizaDatoPersonalA" class="java.lang.String"/>
+	<parameter name="p_clienteAutorizaDatoPersonalNA" class="java.lang.String"/>
+	<parameter name="p_clienteNombreCompleto" class="java.lang.String"/>
+	<parameter name="p_clienteDocumentoNumero" class="java.lang.String"/>
+	<parameter name="p_tratamientoDatosLugarEmision" class="java.lang.String"/>
+	<parameter name="p_tratamientoDatosFechaEmision" class="java.lang.String"/>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="cliNombre1" class="java.lang.String"/>
+	<field name="cliNombre2" class="java.lang.String"/>
+	<field name="cliPaterno" class="java.lang.String"/>
+	<field name="cliMaterno" class="java.lang.String"/>
+	<field name="cliDocumentoNumero" class="java.lang.String"/>
+	<field name="tratamientoDatosLugarEmision" class="java.lang.String"/>
+	<field name="tratamientoDatosFechaEmision" class="java.lang.String"/>
+	<field name="cliAutorizaDatoPersonal" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<image>
+				<reportElement isPrintRepeatedValues="false" x="0" y="0" width="170" height="41" uuid="6d0a4798-b7ae-4336-b2d0-92b0a23375b7"/>
+				<imageExpression><![CDATA[$P{p_ruta}+"CompartamosLogo.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="341" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="555" height="18" uuid="63a763aa-7da4-489d-beed-6daeb0e3b423">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[<style isBold='true'>CONSENTIMIENTO PARA EL TRATAMIENTO DE DATOS PERSONALES</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="47" width="554" height="92" uuid="55da0475-4319-48e9-bd12-93e7b3abcc22"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<text><![CDATA[Mediante el presente formato, COMPARTAMOS FINANCIERA S.A. (en adelante, “COMPARTAMOS FINANCIERA”) identificada con RUC N° 20369155360, con domicilio en Avenida Paseo de la República N° 5895, piso 13, distrito de Miraflores, provincia y departamento de Lima; en el marco de la Ley N° 29733, Ley de Protección de Datos Personales (en adelante, la LPDP), su reglamento, modificatorias y normas complementarias vigentes, me ha informado que será responsable del uso, tratamiento y seguridad de los datos personales que voluntariamente le proporcione o esta recopile de forma física, oral o electrónica, a través de fuentes accesibles al público o de terceros y/o entidades de consulta de bases de datos domiciliadas en Perú o en el exterior, sean personas naturales o jurídicas, privadas o públicas.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="139" width="554" height="50" uuid="13644bf6-267f-4292-bf20-cedbc556ec7a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Dichos datos estarán almacenados en el banco de datos personales denominado “CLIENTES” con Código de Registro RNPDP-PJP N° 16588 y/o en el banco de datos personales denominado “CLIENTES Y USUARIOS” con Código de Registro RNPDP-PJP N° 8168, de titularidad de COMPARTAMOS FINANCIERA.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="200" width="554" height="70" uuid="06a29d63-cf50-4be5-8068-56a887ef1530"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[USTED podrá encontrar la siguiente información en el presente documento:
+(i) Información relevante para la contratación con COMPARTAMOS FINANCIERA:
+Estos datos personales son necesarios para la contratación y/o etapas previas que requiera el/los producto (s), por lo que, al no permitir su tratamiento, impediría estar en condiciones para continuar con el proceso de evaluación y de ser el caso la contratación del del/los producto (s).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="280" width="554" height="40" uuid="99b6abcd-7157-4a16-b8ff-d39ead5ffff2"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[(ii) Información para fines comerciales, informativos o de similar índole:
+Estos datos personales no son necesarios para el servicio o producto solicitado. En caso el Cliente no se acepte el tratamiento, ello no impedirá contratar con COMPARTAMOS FINANCIERA.]]></text>
+			</staticText>
+		</band>
+		<band height="137">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="20" uuid="ff0522a0-7655-45f2-b4f9-206bc961a3c4"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[1. DE LOS DATOS PERSONALES
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="13" width="554" height="110" uuid="b9b4982d-dac5-4919-a4c6-1c06a6ba7cbf"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS FINANCIERA realizará el tratamiento de mis datos personales conforme a la siguiente clasificación:
+a) De carácter identificativo: nombres y apellidos, número de DNI, número de RUC, número de pasaporte, carné de extranjería, dirección de domicilio, teléfono, dirección de correo electrónico, imagen, voz, firma.
+b) Datos de características personales: estado civil, fecha de nacimiento, nacionalidad, sexo, profesión, edad, datos académicos, datos de derechohabientes, datos de persona de contacto.
+c) Datos económicos-financieros y de seguros: créditos, préstamos, avales, datos bancarios, historial de créditos, información tributaria, seguros, tarjetas de crédito, bienes patrimoniales, hipotecas, deudas.
+d) Datos de carácter social: características de vivienda.
+e) Datos sensibles: información relativa a la salud física o mental, huella dactilar, ingresos económicos.]]></text>
+			</staticText>
+		</band>
+		<band height="271">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="20" uuid="b10da052-b7c5-4502-8bb1-6133ea43dce5"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[2. DE LA FINALIDAD DEL TRATAMIENTO DE DATOS PERSONALES
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="13" width="554" height="246" uuid="c3f7d575-ae58-4f1a-b450-ff7c80223c69"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS FINANCIERA me ha informado que la finalidad por la que recopila mis datos personales es para:
+a) Ejecutar, gestionar y administrar la relación contractual que se genere como consecuencia de la suscripción de un contrato con COMPARTAMOS FINANCIERA;
+b) Proporcionar información oportuna, suficiente, veraz, apropiada y de fácil acceso acerca de las características y condiciones de los productos de COMPARTAMOS FINANCIERA, cuando lo solicite;
+c) Usar, brindar y/o transferir esta información para dar cumplimiento a las obligaciones y/o requerimientos que se generen en virtud de las normas vigentes en el ordenamiento jurídico peruano, incluyendo, las del sistema de prevención de lavado de activos y financiamiento del  terrorismo y normas prudenciales.
+d) La relación de las empresas que realizan tratamiento de datos personales por encargo de COMPARTAMOS FINANCIERA podrá ser consultada en su página web (https://www.compartamos.com.pe/), accediendo a las opciones Transparencia – Derechos ARCO y en la parte inferior del documento hacer click a la opción denominada “Revisa la relación de empresas vinculadas que trabajan con Compartamos Financiera” y/o a través del siguiente enlace: https://www.compartamos.com.pe/wcm/connect/756f747a-a84e-433b- a384-9db8633426f4/ARCO-empresas-relacionadas.pdf?MOD=AJPERES, mediante una navegación por internet.
+e) Cumplir con fines estadísticos e históricos para COMPARTAMOS FINANCIERA, y/o de las empresas que forman parte del mismo grupo económico nacional e internacional.
+f) Evaluar mi calidad crediticia y capacidad de pago.
+g) Evaluar cualquier solicitud que efectúe y/o pudiera efectuar.
+h) Efectuar encuestas sobre los servicios de COMPARTAMOS FINANCIERA y/o de las empresas que forman parte del mismo grupo económico.]]></text>
+			</staticText>
+		</band>
+		<band height="186">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="40" uuid="93091b8f-6f3b-4b38-b914-ab7e1d9691ca"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[3. AUTORIZACIÓN PARA USO DE DATOS PERSONALES CON FINES COMERCIALES, INFORMATIVOS O DE SIMILAR ÍNDOLE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="29" width="554" height="110" uuid="90b3e41b-8e2b-4def-822e-8a46fedfb51e"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[De manera adicional, COMPARTAMOS FINANCIERA solicita mi consentimiento para realizar el tratamiento de mis datos personales con las siguientes finalidades que no son necesarias para el servicio o producto solicitado, conforme a lo siguiente:
+a) Fines comerciales e informativos, ofrecer productos y/o productos o servicios ya sean propios de COMPARTAMOS FINANCIERA y/o de las empresas que forman parte del mismo grupo económico y/o de sus socios comerciales, nacionales e internacionales, públicos o privados, envío de publicidad, ofertas, promociones, beneficios, campañas comerciales, para la cual podrán utilizar, entre otros medios, los centros de llamadas (call centers), sistemas de llamado telefónico, envío de mensajes de texto a celular o de correos electrónicos masivos y/o personalizados, envío de revistas y/o catálogos y/o cualquier medio de comunicación similar existente o por existir.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="140" y="150" width="30" height="20" uuid="0978aa77-b9fc-46d9-99ea-a0da0a91f186"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="280" y="150" width="30" height="20" uuid="5c8664ce-a7fb-4a34-915e-dac1e53fbcc4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="180" y="153" width="40" height="14" uuid="6a1c489f-1a49-447f-8a70-794a3971a551"/>
+				<text><![CDATA[Acepto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="153" width="50" height="14" uuid="47908fb2-47d2-415d-9882-216ac593bb55"/>
+				<text><![CDATA[No Acepto]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="145" y="152" width="20" height="15" uuid="b299e74e-89c0-457e-ba4f-8c49d79d8eec"/>
+				<textFieldExpression><![CDATA[$F{cliAutorizaDatoPersonal} == "S" ? "X" : " "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="152" width="20" height="15" uuid="9d0a1706-5c9f-4a06-a0df-238af656ce8b"/>
+				<textFieldExpression><![CDATA[$F{cliAutorizaDatoPersonal} != "S" ? "X" : " "]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="136">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="20" uuid="3d4d4d95-b0a6-4851-8992-110651a459bc"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[4. DE LOS DERECHOS ARCO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="14" width="554" height="106" uuid="03826c9e-0738-494c-b013-887254eed101"/>
+				<textElement textAlignment="Left" markup="styled">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS FINANCIERA me ha informado que podré ejercer mis derechos de Acceso, Rectificación, Cancelación y Oposición, en los términos dispuestos en la LPDP y su Reglamento a través de la siguiente dirección de correo electrónico: <style forecolor='#457fda'>lpdp@compartamos.pe</style> y/o acercándome a la siguiente dirección: Av. Paseo de la República Nro. 5895, interior 1301, distrito provincia y departamento de Lima, Perú.
+De considerar que no he sido atendido en el ejercicio de mis derechos, COMPARTAMOS FINANCIERA me ha informado que puedo presentar una reclamación ante la Autoridad Nacional de Protección de Datos Personales, mediante la Mesa de Partes Física del Ministerio de Justicia y Derechos Humanos ubicada en calle Scipión Llona 350, Miraflores, Lima, Perú o a través de la Mesa de Partes Virtual de dicha entidad: <style forecolor='#457fda'>https://sgd.minjus.gob.pe/sgdvirtual/public/ciudadano/ciudadanoMain.xhtml.</style>]]></text>
+			</staticText>
+		</band>
+		<band height="121">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="20" uuid="146aeddb-f873-4814-87be-bf268dad3dd1"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[5. DEL FLUJO TRANSFRONTERIZO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="15" width="554" height="90" uuid="5e72058d-a5ea-4268-beb4-a8ecb4db061e"/>
+				<textElement textAlignment="Left" markup="styled">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS FINANCIERA podrá transferir mis datos personales dentro del territorio nacional o fuera de este, por cualquier medio, a sus subsidiarias, socios comerciales, empresas vinculadas, a su matriz o controlante, a sus proveedores de servicios, sean personas naturales o jurídicas, peruanas o extranjeras. La lista de destinatarios de los datos personales puede ser consultada a través de su página web (https://www.compartamos.com.pe/), accediendo a las opciones Transparencia – Derechos ARCO y/o a través del siguiente enlace:<style forecolor='#457fda'>https://www.compartamos.com.pe/wcm/connect/756f747a-a84e-433b-a384-9db8633426f4/ARCO-empresas-relacionadas.pdf?MOD=AJPERES</style>, a través de una navegación por internet.]]></text>
+			</staticText>
+		</band>
+		<band height="174">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="20" uuid="dc545527-d02c-4cc0-8e4d-1fdfe88c57d2"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[6. DEL PLAZO DEL TRATAMIENTO DE DATOS PERSONALES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="14" width="554" height="146" uuid="3f515670-8fad-4634-ab0b-c064978f8314"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[COMPARTAMOS FINANCIERA me ha informado que mis datos personales podrán ser conservados hasta diez (10) años después que finalice nuestra relación contractual, en el marco de lo dispuesto por el artículo 183 de la Ley N° 26702 – Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de Banca y Seguros y que los mismos podrán ser tratados para las finalidades expuestas anteriormente durante dicho periodo. COMPARTAMOS FINANCIERA, como de titular del banco de datos, se abstendrá de conservar mis datos personales en los
+siguientes eventos:
+• Cuando tenga conocimiento de su carácter inexacto o incompleto.
+• Cuando los datos personales objeto de tratamiento hayan dejado de ser necesarios o pertinentes para el cumplimiento de las finalidades previstas en el presente documento, salvo medie procedimiento de disociación o anonimización.
+He sido informado que la supresión no procede cuando los datos personales deban ser conservados en virtud de un mandato legal o en virtud de razones históricas, estadísticas o científicas de acuerdo con la legislación aplicable o, en su caso, en las relaciones contractuales que justifiquen el tratamiento de los mismos, tal como lo dispone el Reglamento de LPDP.]]></text>
+			</staticText>
+		</band>
+		<band height="376">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="20" uuid="17ea6e1b-6052-4366-8a6e-147d400b3a5c"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[7. LÍMITES AL SUMINISTRO Y DIVULGACIÓN DE LOS DATOS PERSONALES PROPORCIONADOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="16" width="554" height="243" uuid="d531b852-fd3b-417f-b1ba-8b8bccfbc2ff"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[El tratamiento de mis datos personales se encuentra limitado exclusivamente al cumplimiento de las finalidades previstas en la presente autorización.
+En caso desee limitar el uso o divulgación de mis datos personales, COMPARTAMOS FINANCIERA me ha informado que debo presentar en sus oficinas, en el horario establecido para la atención al público o a través del correo electrónico lpdp@compartamos.pe, un escrito libre, mediante el cual indique a COMPARTAMOS FINANCIERA de qué manera deseo limitar el suministro y divulgación de mis datos personales.
+
+En este sentido, luego de que he leído los apartados anteriores, otorgo mi consentimiento para que COMPARTAMOS FINANCIERA realice el tratamiento de mis datos personales para los fines correspondientes, para lo cual suscribo este documento en señal de conformidad. Estos datos son necesarios para cumplir con las finalidades antes descritas, por lo que, al no permitir su tratamiento, impediría estar en condiciones para cumplir las mismas.
+
+Finalmente, declaro que he sido informado que no me encuentro obligado a suscribir el presente consentimiento. Por ello, declaro que para la suscripción del contrato con COMPARTAMOS FINANCIERA e inclusive antes de la misma, se me informó sobre la aceptación del tratamiento de mis datos personales. En caso contrario, COMPARTAMOS FINANCIERA se encontrará en la imposibilidad de recopilar y tratar los datos personales para cualquier fin vinculado a la contratación y/o etapas previas a la misma. Por lo antes mencionado, tomo conocimiento acerca del contenido del presente documento y firmo, de manera libre y voluntaria, en señal de conformidad autorizando el tratamiento de mis datos personales, para los fines correspondientes.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="260" width="100" height="20" uuid="007816c2-10f2-437c-9194-5008e678c17e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Completo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="280" width="239" height="20" uuid="e6da007b-85c5-4305-a304-25d94da46c3a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Número de Documento de Identidad:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="300" width="239" height="20" uuid="475b55ca-a076-4704-b4a1-48434c62aa12"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha y lugar de emisión:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="320" width="239" height="20" uuid="37922cc0-8348-41c7-a61c-27c637e586a5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="265" width="444" height="14" forecolor="#000000" uuid="014d5b15-0999-4f20-9be2-346e522f11c9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{cliNombre1} + " " + $F{cliNombre2} + ", " +$F{cliPaterno} + " " +$F{cliMaterno}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="110" y="279" width="445" height="1" uuid="aaa4cde2-97fb-4ec3-a9a7-3ab663232557"/>
+			</line>
+			<textField>
+				<reportElement x="190" y="287" width="170" height="14" forecolor="#000000" uuid="1121600f-2929-44fe-8725-1501457ee7a6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cliDocumentoNumero}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="190" y="300" width="365" height="1" uuid="9639f743-0ad2-4cc9-8dab-2480686d1633"/>
+			</line>
+			<line>
+				<reportElement x="130" y="320" width="425" height="1" uuid="48ab72dd-7fbc-48cd-9377-eb9c61953003"/>
+			</line>
+			<textField>
+				<reportElement x="220" y="306" width="110" height="14" forecolor="#000000" uuid="7fcb1f6a-8686-42bc-b6d8-a2a337891de5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{tratamientoDatosLugarEmision}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="306" width="90" height="14" forecolor="#000000" uuid="addc2c95-b1b9-487b-b19a-d664138b7226">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{tratamientoDatosFechaEmision}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="40" y="340" width="515" height="1" uuid="e3cfeaca-3921-4133-ae0a-84f3b999b37d"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

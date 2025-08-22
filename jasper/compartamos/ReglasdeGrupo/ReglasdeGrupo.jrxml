@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReglasdeGrupo" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2fef9a07-4c08-4dca-ac44-054b8b8056c3">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="p_MontoMinimoAhorroValor" class="java.lang.String"/>
+	<parameter name="p_MontoMinimoAhorroDesc" class="java.lang.String"/>
+	<parameter name="p_ReunionDia" class="java.lang.String"/>
+	<parameter name="p_HoraReunion" class="java.lang.String"/>
+	<parameter name="p_PersonaReunion" class="java.lang.String"/>
+	<parameter name="p_UbicacionReunion" class="java.lang.String"/>
+	<parameter name="p_MontoMultaTardanzaValor" class="java.lang.String"/>
+	<parameter name="p_MontoMultaFaltaValor" class="java.lang.String"/>
+	<parameter name="p_MontoMultaTardanzaDesc" class="java.lang.String"/>
+	<parameter name="p_MontoMultaFaltaDesc" class="java.lang.String"/>
+	<parameter name="p_ruta" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="68" splitType="Stretch">
+			<textField>
+				<reportElement x="-10" y="0" width="50" height="19" uuid="01e7c2e2-41d2-4dd3-921b-acc98f4a6dd6"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="40" y="0" width="30" height="19" uuid="32728267-5174-4f53-8d78-4fa9f07bf991"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" de " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="370" y="0" width="203" height="60" uuid="03b79f9e-3967-48d9-8abc-79f81b1ce94d"/>
+				<imageExpression><![CDATA[$P{p_ruta}+"CompartamosLogoB.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="210" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="15" uuid="b7e62315-0579-45fc-88ae-017036e45745">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[REGLAS DE GRUPO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="554" height="14" uuid="a0ed77dd-d64c-4614-9980-f3467809345d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1.Comité]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="554" height="30" uuid="0c59d47d-3548-4add-ada2-1299654c174e"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Tahoma" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Como representantes y responsables de la administración del crédito y ahorro para este ciclo y por unanimidad, son las personas que firman el presente documento.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="554" height="14" uuid="a5b041a3-94b7-434d-b095-7df444c31eae">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[Tienen las siguientes responsabilidades:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="84" width="554" height="116" uuid="480877bd-3a98-4acd-9c63-4e8f8f6bd481"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<text><![CDATA[• Presidenta.- Tendrá la responsabilidad de mantener integrado y unido al Grupo, así como de motivar y asegurarse de que el "Grupo Solidario" funcione y el Comité administre los fondos.
+• Tesorera.- Tendrá la responsabilidad de administrar los fondos del grupo transparentemente, dará informes a éste sobre la situación económica. Será responsable de cuidar honestamente el manejo del dinero que genere la cobranza, las multas, los ahorros, así como los depósitos, velando siempre por la seguirdad de los mismos. Deberá presentar el o los estados de cuenta de los ahorros del grupo, por lo menos una vez al mes.
+• Secretaria.- Tendrá la responsabilidad de llevar la minuta de acuerdos a suplir en cualquier momento a la Tesorera o Presidenta en sus funciones en caso de presentarse la necesidad. Así mismo tendrá que pasar la lista y apoyar al Comité para lograr su buen funcionamiento.]]></text>
+			</staticText>
+		</band>
+		<band height="85">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="14" uuid="0209bb63-d930-48fb-86d3-b50e98e02b8d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2.Crédito]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="554" height="53" uuid="de272c37-fe83-44ad-b242-9dae9bb29849">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Tahoma" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Para el pago del Crédito Grupal, cada integrante del grupo debe aportar el monto detallado en las "Condiciones Específicas para cada integrante del Grupo"; la sumatoria de dichos montos deberán ser abonadas en conjunto. Asimismo, se comprometen todas las integrantes a aportar en partes proporcionales, el monto correspondiente de aquella integrante de EL GRUPO que no lo haya hecho, consolidando así el "PAGO SOLIDARIO".]]></text>
+			</staticText>
+		</band>
+		<band height="80">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="14" uuid="5be8e3bc-e974-4f22-af42-1b3fe1c6f719">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3.Ahorros]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="43" width="554" height="26" uuid="e40dbbfa-e929-4232-85fa-7249e217533a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Tahoma" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Los ahorros son propiedad de las integrantes. COMPARTAMOS no autoriza ni se hace responsable de ningún préstamo interno que se otorgue a una o varias clientas con el monto de los ahorros del 'Grupo'.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="17" width="554" height="26" uuid="df3b8f73-153b-4d54-af83-8423f0cbef3b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" markup="styled">
+					<font fontName="Tahoma" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["El monto mínimo voluntario de ahorro por cuota será de S/. "+"<style isUnderline='true'>"+$P{p_MontoMinimoAhorroValor}+"</style>"+" "+"("+$P{p_MontoMinimoAhorroDesc}+")"+" "+"que se depositará en la cuenta de ahorro del grupo."]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="92">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="14" uuid="b1d034fd-0112-4642-aa82-a12815faeecc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4.Reuniones]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="14" width="554" height="76" uuid="ec90060e-87f1-4f6a-97bf-811fdd385b57"/>
+				<textElement markup="styled">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Las integrantes de este 'Grupo' acordaron reunirse los días"+" "+"<style isUnderline='true'>"+$P{p_ReunionDia}+"</style>"+" a las "+"<style isUnderline='true'>"+$P{p_HoraReunion}+"</style>"+" horas, en casa del Sr(a). "+"<style isUnderline='true'>"+$P{p_PersonaReunion}+"</style>"+" ubicado(a) en "+"<style isUnderline='true'>"+$P{p_UbicacionReunion}+"</style>"+" para reunir el pago correspondiente, el ahorro y tratar diversos asuntos.\n"+"Previo al desembolso, todas las clientas de nuevo ingreso deberán asistir a 3 reuniones de capacitación para que se verifique correcta consolidación del 'Grupo'"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="169">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="14" uuid="5f5e7377-5258-4535-a3ec-b4b5478faf22">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5.Incumplimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="18" width="554" height="142" uuid="92bb2f91-9de1-46fc-958a-b8b7b2b74730">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Tahoma" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Las integrantes perderán su derecho a recibir el crédito que COMPARTAMOS les otorga, y dejarán de formar parte del 'Grupo' en los siguientes casos:
+• Cuando no cumplan con sus pagos.
+• Cuando no sean solidarias con el 'Grupo' .
+• Cuando se ausenten más de 3 veces a las reuniones de seguimiento injustificadamente.
+• Cuando roben dinero o hagan malos manejos abusando de la confianza de las demás integrantes del 'Grupo' .
+• Cuando el resto de las integrantes lo consideren de manera conveniente para el buen funcionamiento del 'Grupo' .
+• Otros que considere COMPARTAMOS.
+
+Las integrantes que salgan por cualquier causa del "Grupo", deberán liquidar de inmediato el monto total de su adeudo con COMPARTAMOS.
+]]></text>
+			</staticText>
+		</band>
+		<band height="120">
+			<staticText>
+				<reportElement x="0" y="0" width="554" height="14" uuid="e6c14b97-5b97-4abd-9ac2-1be5eaee3b98">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6.Multas a las Reuniones]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="14" width="554" height="96" uuid="04b597ec-e501-4808-95bc-58f36b89ba12"/>
+				<textElement markup="styled">
+					<font fontName="Tahoma"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Por acuerdo de las integrantes del GRUPO, y sin que haya intervenido para ello COMPARTAMOS, las primeras establecen una multa por tardanza de llegada a la reunión de S/. "+"<style isUnderline='true'>"+$P{p_MontoMultaTardanzaValor}+"</style>"+" "+"("+$P{p_MontoMultaTardanzaDesc}+")"+"  y por falta a la reunión de S/. "+ "<style isUnderline='true'>"+$P{p_MontoMultaFaltaValor}+"</style>"+" "+"("+$P{p_MontoMultaFaltaDesc}+")"+"."+" La cantidad que resulte acumulada será destinada en los términos que haya decidido el 'Grupo'. Estas cantidades son establecidas por las integrantes del 'Grupo'. COMPARTAMOS no administrará ni captará estas cantidades en ningún momento, por lo que la recolección de dichos montos es responsabilidad total del grupo."]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="340">
+			<staticText>
+				<reportElement x="0" y="1" width="554" height="14" uuid="bf0ddcf3-a62d-48cb-9d66-fb6e4d140637">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[7.Otras Consideraciones]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="21" width="554" height="208" uuid="cd56de8f-d11b-4b6e-8acb-742513be9497"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+					<paragraph lineSpacingSize="1.5"/>
+				</textElement>
+				<text><![CDATA[• Es responsabilidad del "Grupo" y por acuerdo mutuo, aceptar o no la renovación de créditos de clientes que tuvieron más de 3 atrasos durante el ciclo inmediato anterior, teniendo el 'Grupo' la responsabilidad de ser solidarias en los pagos que se requieran de esos créditos.
+
+• Al firmar el presente documento los miembros del Comité declaran que todos los integrantes del grupo se encuentran plenamente de acuerdo con lo estipulado y se sujetan a las condiciones señaladas en el documento. Asimismo, acuerdan que una copia será entregada a la Presidenta del Comité, el cual será custodiado en el lugar donde se lleve a cabo las reuniones.
+
+• Los documentos utilizados por el Comité durante la reunión de recuperación (Contrato de ahorro, Fichas de Pagos) deberán estar resguardados en el domicilio donde el 'Grupo' acuerde reunirse, y no podrán trasladarse a otro lugar, excepto cuando haya cambio de domicilio.
+
+• Por ningún motivo las clientas deberán: ingresar al grupo a personas recomendadas por los colaboradores de COMPARTAMOS,prestar dinero o entregar pagos totales o parciales del crédito al colaborador de COMPARTAMOS que les sea asignado.
+
+• Ningún colaborador de COMPARTAMOS podrá actuar como testigo a ruego de los integrantes.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="240" width="554" height="14" uuid="11e523a4-9b95-488d-bdb1-ab91cdf69030">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Notas:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="254" width="554" height="66" uuid="7c2092bb-c20f-4ec4-b5fc-fd60cb00387b"/>
+				<textElement>
+					<font fontName="Tahoma"/>
+					<paragraph lineSpacingSize="1.5"/>
+				</textElement>
+				<text><![CDATA[1. Recuerde que debe realizar sus pagos completos en la fecha estipulada en el Cronograma de Pagos adjunto al presente documento.
+2. Recuerde que los pagos pueden ser realizados en cualquier agencia o canales autorizados por COMPARTAMOS.
+3. En caso la fecha de su pago sea en día inhábil, usted podrá realizar su pago en el día hábil siguiente, (sin ningún cargo).
+4. Cualquier duda o comentario que tenga, favor de comunicarse en la Agencia que le corresponda.]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

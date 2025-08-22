@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PlanPagos" pageWidth="550" pageHeight="750" columnWidth="550" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="66a2ace3-dd29-452f-ae26-480754f8c073">
+	<property name="ireport.zoom" value="2.593742460100008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="firmanteNumber" class="java.lang.Integer"/>
+	<field name="firmanteTipoDocumento" class="java.lang.String"/>
+	<field name="firmanteNumDocumento" class="java.lang.String"/>
+	<field name="firmanteNombre1" class="java.lang.String"/>
+	<field name="firmanteNombre2" class="java.lang.String"/>
+	<field name="firmantePaterno" class="java.lang.String"/>
+	<field name="firmanteMaterno" class="java.lang.String"/>
+	<field name="firmanteCargo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="52" splitType="Stretch">
+			<printWhenExpression><![CDATA[$P{firmanteNumber} == $V{REPORT_COUNT}]]></printWhenExpression>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="26" width="156" height="13" uuid="2f719455-e458-402e-995d-88b54e356cfd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firmanteNombre1}+" "+$F{firmanteNombre2}+" "+$F{firmantePaterno}+" "+$F{firmanteMaterno}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="39" width="156" height="13" uuid="94028b1e-eeca-474e-b40e-b43902d8bb6f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firmanteTipoDocumento}+": "+$F{firmanteNumDocumento}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="13" width="156" height="13" uuid="5a836f0d-1714-4572-aa42-be76d63f35b1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<text><![CDATA[Nombres y Apellidos:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="156" height="1" uuid="6abf6931-0b0e-4674-be0f-a1e40de40591"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="0" width="156" height="13" uuid="5d25cf58-bdd4-4f3b-924c-5d4b28d4e789"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rajdhani"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firmanteCargo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
